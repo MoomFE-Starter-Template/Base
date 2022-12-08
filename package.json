@@ -3,7 +3,7 @@
   "private": true,
   "packageManager": "pnpm@7.17.1",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
-  "homepage": "https://github.com/MoomFE/Starter-Template",
+  "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
     "dev": "pnpm install && vite --host",
     "build": "pnpm install && cross-env SSG=true vite-ssg build",
