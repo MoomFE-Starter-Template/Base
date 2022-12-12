@@ -5,7 +5,7 @@
 
 ## 特性
 
-- ⚡️ [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io), [Vue 3](https://github.com/vuejs/core) 优先 - 就是快！
+- ⚡️ [Vite 4](https://github.com/vitejs/vite), [pnpm](https://pnpm.io), [Vue 3](https://github.com/vuejs/core) 优先 - 就是快！
 - 📲 [组件自动加载](https://github.com/antfu/unplugin-vue-components)
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
@@ -14,7 +14,7 @@
 - 🗂 [基于文件的路由](https://github.com/hannoeru/vite-plugin-pages)
 - 📑 [布局系统](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- 🌍 [I18n 国际化开箱即用](https://github.com/intlify/vue-i18n-next), 使用插件[自动加载](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n)
+- 🌍 [I18n 国际化开箱即用](https://github.com/intlify/vue-i18n-next), 使用插件[自动加载](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n)
 - 🖨 使用 [Vite SSG](https://github.com/antfu/vite-ssg) 进行服务端生成 ( SSG )
 - 🦔 使用 [critters](https://github.com/GoogleChromeLabs/critters) 的生成关键 CSS
 - 🌙 深色模式
@@ -40,7 +40,7 @@
   - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
   - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
   - [Vue I18n](https://github.com/intlify/vue-i18n-next) - 国际化
-    - [vite-plugin-vue-i18n](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n) - Vue I18n 的 Vite 插件
+    - [vite-plugin-vue-i18n](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n) - Vue I18n 的 Vite 插件
   - [VueUse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
   - [vite-ssg-sitemap](https://github.com/jbaubree/vite-ssg-sitemap) - 站点地图生成器
   - [@vueuse/head](https://github.com/vueuse/head) - 响应式地操作文档头信息
