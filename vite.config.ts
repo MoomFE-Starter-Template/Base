@@ -106,6 +106,7 @@ export default defineConfig(({ mode }) => {
       crittersOptions: {
         inlineFonts: false,
         preloadFonts: false,
+        preload: 'swap',
       },
       includedRoutes: paths => paths.filter(path => !path.includes(':')),
       onFinished: () => {
