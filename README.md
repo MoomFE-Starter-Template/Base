@@ -19,6 +19,7 @@
 - 🦔 使用 [critters](https://github.com/GoogleChromeLabs/critters) 的生成关键 CSS
 - 🌙 深色模式
 - 🦾 TypeScript 支持
+- ☁️ 零配置部署 Netlify 和 Vercel
 
 <br>
 
