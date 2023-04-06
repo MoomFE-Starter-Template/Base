@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 import { defineConfig, loadEnv } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import VueJsx from '@vitejs/plugin-vue-jsx';
@@ -16,7 +16,7 @@ import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 
 export default defineConfig(({ mode }) => {
   /** 是否是开发模式 */
-  const isDev = mode === 'development'; // eslint-disable-line @typescript-eslint/no-unused-vars
+  const isDev = mode === 'development';
   /** 环境变量 */
   const env = loadEnv(mode, process.cwd(), ['VITE_', 'APP_']);
 
