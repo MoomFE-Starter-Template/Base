@@ -1,5 +1,5 @@
 body {
-  @apply text-dynamic bg-dynamic important:transition-none;
+  @apply text-dynamic bg-dynamic;
   @apply scrollbar scrollbar-rounded;
 
   -moz-osx-font-smoothing: grayscale;
