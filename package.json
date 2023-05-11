@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.4.0",
+  "packageManager": "pnpm@8.5.0",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
@@ -17,20 +17,20 @@
     "@vueuse/math": "^10.1.2",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
-    "pinia": "^2.0.35",
+    "pinia": "^2.0.36",
     "vite-ssg": "^0.22.2",
     "vue": "^3.2.47",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.61",
+    "@iconify/json": "^2.2.63",
     "@intlify/unplugin-vue-i18n": "^0.10.0",
-    "@moomfe/eslint-config": "^2.4.0",
+    "@moomfe/eslint-config": "^2.4.1",
     "@rollup/pluginutils": "^5.0.2",
     "@types/fs-extra": "^11.0.1",
     "@types/lodash": "^4.14.194",
-    "@types/node": "^20.1.0",
+    "@types/node": "^20.1.2",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^4.2.1",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
@@ -38,7 +38,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.40.0",
     "fs-extra": "^11.1.1",
-    "pnpm": "^8.4.0",
+    "pnpm": "^8.5.0",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
     "unocss": "^0.51.12",
@@ -48,9 +48,9 @@
     "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.5",
-    "vite-plugin-inspect": "^0.7.25",
+    "vite-plugin-inspect": "^0.7.26",
     "vite-plugin-pages": "^0.29.0",
     "vite-plugin-vue-layouts": "^0.8.0",
-    "vite-ssg-sitemap": "^0.5.0"
+    "vite-ssg-sitemap": "^0.5.1"
   }
 }
