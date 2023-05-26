@@ -15,6 +15,13 @@
     <button :title="t('button.change-languages')" @click="toggleLocales">
       <i-mdi-translate />
     </button>
+
+    <!-- 跳转到 Github -->
+    <button>
+      <a class="c-inherit!" href="https://github.com/MoomFE-Starter-Template/Base" target="_blank" rel="noopener noreferrer">
+        <i-mdi-github />
+      </a>
+    </button>
   </div>
 </template>
 
@@ -30,6 +37,6 @@
 
 <style lang="scss">
   .footer > * {
-    @apply opacity-60 hover:text-primary hover:opacity-100 transition-all mx-2;
+    @apply opacity-60 hover:text-primary hover:opacity-100 transition-(all duration-300) mx-2;
   }
 </style>
