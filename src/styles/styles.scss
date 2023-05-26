@@ -7,17 +7,16 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-a:focus,
-a:active {
-  @apply outline-none;
-}
-
 a,
 a:focus,
 a:hover {
   @apply cursor-pointer text-primary underline;
 }
 
+a,
+a:focus,
+a:active,
+div,
 div:focus {
   @apply outline-none;
 }
