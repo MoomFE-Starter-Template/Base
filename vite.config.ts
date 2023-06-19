@@ -84,6 +84,7 @@ export default defineConfig(({ mode }) => {
         ],
         eslintrc: {
           enabled: true,
+          filepath: path.resolve(__dirname, './.eslintrc-auto-import.json'),
         },
       }),
       // i18n 国际化
