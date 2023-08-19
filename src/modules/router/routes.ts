@@ -1,5 +1,5 @@
 import type { RouteComponent, RouteRecordRaw } from 'vue-router';
-import { isESModule, isFunction, isPlainObject, leastRun } from '@moomfe/small-utils';
+import { isESModule, isFunction, isPlainObject, leastRun } from 'mixte';
 import { camelCase, upperFirst } from 'lodash';
 import { setupLayouts } from 'virtual:generated-layouts';
 import generatedRoutes from 'virtual:generated-pages';
@@ -23,6 +23,7 @@ function eachRoutes(routes: RouteRecordRaw[]) {
     }
     // 页面组件是一个方法
     else if (isFunction(component)) {
+      // @ts-expect-error
       route.component = () => leastRun(0, component).then((m) => {
         return defineComponentName(route, isESModule(m) ? m.default : m);
       });
