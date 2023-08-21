@@ -101,6 +101,8 @@
   pnpm dev # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 ```
 
+<br>
+
 ## 项目配置
 
   - 配置文件地址: [src/settings.ts](./src/settings.ts)
