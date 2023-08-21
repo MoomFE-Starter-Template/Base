@@ -6,8 +6,9 @@
     </button>
 
     <!-- 切换深色模式 -->
-    <button :title="t('button.toogle-dark-mode')" @click="theme.toggleDark()">
-      <i-ph-moon v-if="theme.dark" />
+    <button :title="t('button.toogle-dark-mode')" @click="theme.toggle()">
+      <i-mdi-theme-light-dark v-if="theme.value === 'auto'" />
+      <i-ph-moon v-else-if="theme.value === 'dark'" />
       <i-ic-outline-wb-sunny v-else />
     </button>
 
