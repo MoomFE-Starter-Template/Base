@@ -112,9 +112,3 @@
 
 > - 项目名称
 > - 默认值: `'Base'`
-
-### `titleTemplate` ( `string` )
-
-> - 标题名称模板, 用于自定义页面标题的格式, 使用 `':title'` 代表当前路由的 `meta.title` 属性
-> - 默认值: `':title | ${settings.name}'`
-> - 设置标题的相关代码在 [src/App.vue](./src/App.vue) 中
