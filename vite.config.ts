@@ -13,7 +13,6 @@ import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
 import generateSitemap from 'vite-ssg-sitemap';
 import Inspect from 'vite-plugin-inspect';
-import { SmallUtilsComponentsResolver } from '@moomfe/small-utils/vite-config';
 import { MixteUseAutoImport } from '@mixte/use/register';
 
 export default defineConfig(({ mode }) => {
@@ -64,8 +63,6 @@ export default defineConfig(({ mode }) => {
         resolvers: [
           // 自动导入图标组件
           IconsResolver({ prefix: 'i' }),
-          // 自动导入 @moomfe/small-utils 的组件
-          SmallUtilsComponentsResolver(),
         ],
       }),
       // API 自动加载
