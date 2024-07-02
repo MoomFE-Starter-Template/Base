@@ -2,6 +2,18 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "name": "Components",
+      "path": "src/components",
+    },
+    {
+      "name": "Layouts",
+      "path": "src/layouts"
+    },
+    {
+      "name": "Pages",
+      "path": "src/pages"
     }
   ],
   "settings": {
@@ -40,6 +52,9 @@
     "files.exclude": {
       "*.code-workspace": true,
       "node_modules": true,
+      "src/components": true,
+      "src/layouts": true,
+      "src/pages": true
     },
   }
 }
