@@ -1,17 +1,33 @@
 {
-  "name": "",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
+  "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
+  "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "astro": "^4.11.3",
+    "astro": "^4.11.3"
+  },
+  "devDependencies": {
     "@astrojs/check": "^0.7.0",
+    "@moomfe/eslint-config": "^3.0.0",
+    "eslint": "^9.6.0",
+    "lint-staged": "^15.2.7",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,mts,vue}": "eslint --cache --fix"
   }
 }
