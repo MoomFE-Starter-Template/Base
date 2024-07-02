@@ -4,8 +4,12 @@
       "path": "."
     },
     {
+      "name": "Shared",
+      "path": "src/shared"
+    },
+    {
       "name": "Components",
-      "path": "src/components",
+      "path": "src/components"
     },
     {
       "name": "Layouts",
@@ -54,7 +58,8 @@
       "node_modules": true,
       "src/components": true,
       "src/layouts": true,
-      "src/pages": true
+      "src/pages": true,
+      "src/shared": true
     },
   }
 }
