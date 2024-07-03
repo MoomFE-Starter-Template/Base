@@ -23,7 +23,7 @@ importers:
         version: 0.7.0(typescript@5.5.3)
       '@moomfe/eslint-config':
         specifier: ^3.0.0
-        version: 3.0.0(@vue/compiler-sfc@3.4.31)
+        version: 3.0.0(@vue/compiler-sfc@3.4.31)(astro-eslint-parser@1.0.2(typescript@5.5.3))(eslint-plugin-astro@1.2.2(eslint@9.6.0)(typescript@5.5.3))
       '@rollup/pluginutils':
         specifier: ^5.1.0
         version: 5.1.0(rollup@4.18.0)
@@ -39,6 +39,9 @@ importers:
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
+      eslint-plugin-astro:
+        specifier: ^1.2.2
+        version: 1.2.2(eslint@9.6.0)(typescript@5.5.3)
       fs-extra:
         specifier: ^11.2.0
         version: 11.2.0
@@ -1227,10 +1230,20 @@ packages:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
 
+  astro-eslint-parser@1.0.2:
+    resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   astro@4.11.3:
     resolution: {integrity: sha512-SuZbB/71XVn+WqWNCe7XOfHuqhS+k4gj8+A3wluTZQrORGaHUFRn/f8F9Tu5yESQZB1q8UKhahvHwkTV3AdVsg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
+
+  astrojs-compiler-sync@1.0.0:
+    resolution: {integrity: sha512-IM6FxpMoBxkGGdKppkFHNQIC9Wge7jspG2MIJff8DOhG41USNJLxJfxRm7wnkTKWlYK5Y1YFFNYr2vUUKkI8sw==}
+    engines: {node: ^18.18.0 || >=20.9.0}
+    peerDependencies:
+      '@astrojs/compiler': '>=0.27.0'
 
   axobject-query@4.0.0:
     resolution: {integrity: sha512-+60uv1hiVFhHZeO+Lz0RYzsVHy5Wr1ayX0mwda9KPDVLNJgZ1T9Ny7VmFbLDzxsH0D87I86vgj3gFrjTJUYznw==}
@@ -1610,6 +1623,12 @@ packages:
     resolution: {integrity: sha512-TAgYNuc20QyKw8NXtpzR3LeMTTv1qAJVKkjCVzjRSGiSR1EetEY7LRgQVhcgP/C1FnI87isQERAIkKvkYyLq0Q==}
     peerDependencies:
       eslint: '*'
+
+  eslint-plugin-astro@1.2.2:
+    resolution: {integrity: sha512-3UUWo/gwk/YhurYpFKgLJswV33kR9zhtzXk+u2g3WE5Px07wDtWSR3PoyPadHERA4g/9TCCGjsimU/TZyUKxow==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=8.57.0'
 
   eslint-plugin-command@0.2.3:
     resolution: {integrity: sha512-1bBYNfjZg60N2ZpLV5ATYSYyueIJ+zl5yKrTs0UFDdnyu07dNSZ7Xplnc+Wb6SXTdc1sIaoIrnuyhvztcltX6A==}
@@ -3420,7 +3439,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@2.21.2(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)':
+  '@antfu/eslint-config@2.21.2(@vue/compiler-sfc@3.4.31)(astro-eslint-parser@1.0.2(typescript@5.5.3))(eslint-plugin-astro@1.2.2(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)':
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
@@ -3440,7 +3459,7 @@ snapshots:
       eslint-plugin-markdown: 5.0.0(eslint@9.6.0)
       eslint-plugin-n: 17.9.0(eslint@9.6.0)
       eslint-plugin-no-only-tests: 3.1.0
-      eslint-plugin-perfectionist: 2.11.0(eslint@9.6.0)(typescript@5.5.3)(vue-eslint-parser@9.4.3(eslint@9.6.0))
+      eslint-plugin-perfectionist: 2.11.0(astro-eslint-parser@1.0.2(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)(vue-eslint-parser@9.4.3(eslint@9.6.0))
       eslint-plugin-regexp: 2.6.0(eslint@9.6.0)
       eslint-plugin-toml: 0.11.1(eslint@9.6.0)
       eslint-plugin-unicorn: 54.0.0(eslint@9.6.0)
@@ -3458,6 +3477,9 @@ snapshots:
       vue-eslint-parser: 9.4.3(eslint@9.6.0)
       yaml-eslint-parser: 1.2.3
       yargs: 17.7.2
+    optionalDependencies:
+      astro-eslint-parser: 1.0.2(typescript@5.5.3)
+      eslint-plugin-astro: 1.2.2(eslint@9.6.0)(typescript@5.5.3)
     transitivePeerDependencies:
       - '@vue/compiler-sfc'
       - supports-color
@@ -4100,9 +4122,9 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@moomfe/eslint-config@3.0.0(@vue/compiler-sfc@3.4.31)':
+  '@moomfe/eslint-config@3.0.0(@vue/compiler-sfc@3.4.31)(astro-eslint-parser@1.0.2(typescript@5.5.3))(eslint-plugin-astro@1.2.2(eslint@9.6.0)(typescript@5.5.3))':
     dependencies:
-      '@antfu/eslint-config': 2.21.2(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)
+      '@antfu/eslint-config': 2.21.2(@vue/compiler-sfc@3.4.31)(astro-eslint-parser@1.0.2(typescript@5.5.3))(eslint-plugin-astro@1.2.2(eslint@9.6.0)(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)
       eslint: 9.6.0
       typescript: 5.5.3
     transitivePeerDependencies:
@@ -4808,6 +4830,25 @@ snapshots:
 
   array-union@2.1.0: {}
 
+  astro-eslint-parser@1.0.2(typescript@5.5.3):
+    dependencies:
+      '@astrojs/compiler': 2.8.1
+      '@typescript-eslint/scope-manager': 7.15.0
+      '@typescript-eslint/types': 7.15.0
+      '@typescript-eslint/typescript-estree': 7.15.0(typescript@5.5.3)
+      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.8.1)
+      debug: 4.3.5
+      entities: 4.5.0
+      eslint-scope: 8.0.1
+      eslint-visitor-keys: 4.0.0
+      espree: 10.1.0
+      globby: 11.1.0
+      is-glob: 4.0.3
+      semver: 7.6.2
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
   astro@4.11.3(@types/node@20.14.9)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.8.1
@@ -4884,6 +4925,11 @@ snapshots:
       - supports-color
       - terser
       - typescript
+
+  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.1):
+    dependencies:
+      '@astrojs/compiler': 2.8.1
+      synckit: 0.9.0
 
   axobject-query@4.0.0:
     dependencies:
@@ -5237,6 +5283,21 @@ snapshots:
       '@antfu/utils': 0.7.10
       eslint: 9.6.0
 
+  eslint-plugin-astro@1.2.2(eslint@9.6.0)(typescript@5.5.3):
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.6.0)
+      '@jridgewell/sourcemap-codec': 1.4.15
+      '@typescript-eslint/types': 7.15.0
+      astro-eslint-parser: 1.0.2(typescript@5.5.3)
+      eslint: 9.6.0
+      eslint-compat-utils: 0.5.1(eslint@9.6.0)
+      globals: 15.7.0
+      postcss: 8.4.39
+      postcss-selector-parser: 6.1.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
   eslint-plugin-command@0.2.3(eslint@9.6.0):
     dependencies:
       '@es-joy/jsdoccomment': 0.43.1
@@ -5320,13 +5381,14 @@ snapshots:
 
   eslint-plugin-no-only-tests@3.1.0: {}
 
-  eslint-plugin-perfectionist@2.11.0(eslint@9.6.0)(typescript@5.5.3)(vue-eslint-parser@9.4.3(eslint@9.6.0)):
+  eslint-plugin-perfectionist@2.11.0(astro-eslint-parser@1.0.2(typescript@5.5.3))(eslint@9.6.0)(typescript@5.5.3)(vue-eslint-parser@9.4.3(eslint@9.6.0)):
     dependencies:
       '@typescript-eslint/utils': 7.15.0(eslint@9.6.0)(typescript@5.5.3)
       eslint: 9.6.0
       minimatch: 9.0.5
       natural-compare-lite: 1.4.0
     optionalDependencies:
+      astro-eslint-parser: 1.0.2(typescript@5.5.3)
       vue-eslint-parser: 9.4.3(eslint@9.6.0)
     transitivePeerDependencies:
       - supports-color

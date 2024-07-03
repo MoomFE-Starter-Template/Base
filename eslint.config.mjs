@@ -1,3 +1,5 @@
 import moomfe from '@moomfe/eslint-config';
 
-export default moomfe();
+export default moomfe({
+  astro: true,
+});
