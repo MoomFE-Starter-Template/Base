@@ -1,7 +1,7 @@
 {
   "name": "nuxt-base",
-  "private": true,
   "type": "module",
+  "private": true,
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
@@ -9,12 +9,17 @@
     "dev": "pnpm i && nuxt dev",
     "generate": "pnpm i && nuxt generate",
     "preview": "pnpm build && nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "vue": "latest"
   },
   "devDependencies": {
-    "nuxt": "^3.12.4"
+    "@moomfe/eslint-config": "^3.1.0",
+    "eslint": "^9.7.0",
+    "nuxt": "^3.12.4",
+    "typescript": "^5.5.3"
   }
 }
