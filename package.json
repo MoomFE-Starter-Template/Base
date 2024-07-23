@@ -5,8 +5,8 @@
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
-    "build": "pnpm i && nuxt build",
     "dev": "pnpm i && nuxt dev",
+    "build": "pnpm i && nuxt build",
     "generate": "pnpm i && nuxt generate",
     "preview": "pnpm build && nuxt preview",
     "lint": "eslint .",
@@ -14,12 +14,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@unocss/reset": "^0.61.5",
     "vue": "latest"
   },
   "devDependencies": {
     "@moomfe/eslint-config": "^3.1.0",
+    "@unocss/nuxt": "^0.61.5",
     "eslint": "^9.7.0",
     "nuxt": "^3.12.4",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "unocss": "^0.61.5",
+    "unocss-preset-extra": "^0.5.3"
   }
 }
