@@ -1,6 +1,6 @@
 <template>
   <div class="text-5xl">
-    <i-iconoir-people-rounded class="inline-block" />
+    <NuxtIcon name="iconoir:people-rounded" class="inline-block" />
   </div>
 
   <p class="mt-2">

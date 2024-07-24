@@ -1,7 +1,7 @@
 <template>
   <div class="relative" :class="props.size">
-    <i-logos-vue class="size-full" />
-    <i-carbon-template class="size-1/2 absolute right-0 bottom-0" />
+    <NuxtIcon name="logos:vue" class="size-full" />
+    <NuxtIcon name="carbon:template" class="size-1/2 absolute right-0 bottom-0" />
   </div>
 </template>
 
