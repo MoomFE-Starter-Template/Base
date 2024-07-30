@@ -22,13 +22,14 @@
   "devDependencies": {
     "@iconify/json": "^2.2.232",
     "@moomfe/eslint-config": "^3.1.0",
-    "@nuxt/icon": "^1.4.0",
-    "@unocss/nuxt": "^0.61.7",
-    "eslint": "^9.8.0",
+    "@unocss/nuxt": "^0.61.5",
+    "eslint": "^9.7.0",
     "nuxt": "^3.12.4",
     "sass": "^1.77.8",
-    "typescript": "^5.5.4",
-    "unocss": "^0.61.7",
-    "unocss-preset-extra": "^0.5.3"
+    "typescript": "^5.5.3",
+    "unocss": "^0.61.5",
+    "unocss-preset-extra": "^0.5.3",
+    "unplugin-icons": "^0.19.0",
+    "unplugin-vue-components": "^0.27.3"
   }
 }

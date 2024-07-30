@@ -1,13 +1,30 @@
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import Components from 'unplugin-vue-components/vite';
+import IconsResolver from 'unplugin-icons/resolver';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    // 原子化 CSS 引擎
     '@unocss/nuxt',
-    '@nuxt/icon',
+    // 将图标作为组件导入
+    ['unplugin-icons/nuxt', { scale: 1 }],
   ],
 
-  icon: {
-    componentName: 'NuxtIcon',
-    mode: 'svg',
+  vite: {
+    plugins: [
+      // 自动导入使用到的组件
+      Components({
+        dts: resolve(__dirname, './app/components.d.ts'),
+        dirs: [],
+        resolvers: [
+          IconsResolver(), // 图标
+        ],
+      }),
+    ],
   },
 
   css: [

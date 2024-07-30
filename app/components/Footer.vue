@@ -2,13 +2,13 @@
   <div class="footer flex justify-center text-(2xl center) mt-6">
     <!-- 回到首页 -->
     <button title="首页" @click="navigateTo('/')">
-      <NuxtIcon name="vaadin:home-o" />
+      <i-vaadin-home-o />
     </button>
 
     <!-- 跳转到 Github -->
     <button>
       <a class="c-inherit!" href="https://github.com/MoomFE-Starter-Template/Base" target="_blank" rel="noopener noreferrer">
-        <NuxtIcon name="mdi:github" />
+        <i-mdi-github />
       </a>
     </button>
   </div>
