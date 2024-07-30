@@ -28,7 +28,8 @@
   - 待添加
 
 ### 插件
-  - 待添加
+  - [VueUse](https://vueuse.org) - 实用的 Composition API 工具合集
+  - [@mixte/use](https://mixte.moomfe.com) - 一些 Vue 组合式函数
 
 ### 编码风格
   - 使用 Composition API 的 [\<script setup\> SFC 语法](https://github.com/vuejs/rfcs/pull/227)

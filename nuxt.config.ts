@@ -12,6 +12,10 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     // 将图标作为组件导入
     ['unplugin-icons/nuxt', { scale: 1 }],
+    // VueUse 集成
+    '@vueuse/nuxt',
+    // @mixte/use 集成
+    '@mixte/use/nuxt',
   ],
 
   vite: {

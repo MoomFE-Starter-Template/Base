@@ -16,13 +16,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mixte/use": "^2.0.2",
     "@unocss/reset": "^0.61.7",
+    "@vueuse/core": "^10.11.0",
+    "mixte": "^2.0.2",
     "vue": "latest"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.232",
     "@moomfe/eslint-config": "^3.1.0",
     "@unocss/nuxt": "^0.61.5",
+    "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.7.0",
     "nuxt": "^3.12.4",
     "sass": "^1.77.8",
