@@ -5,10 +5,11 @@
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
-    "dev": "pnpm i && nuxt dev",
-    "build": "pnpm i && nuxt build",
-    "generate": "pnpm i && nuxt generate",
-    "preview": "pnpm build && nuxt preview",
+    "dev": "pnpm i && nuxt dev --host",
+    "build": "pnpm i && nuxt generate",
+    "build:ssr": "pnpm i && nuxt build",
+    "preview": "pnpm build && nuxt preview --host",
+    "preview:ssr": "pnpm build:ssr && nuxt preview --host",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare"
