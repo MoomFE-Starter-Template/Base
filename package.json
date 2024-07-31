@@ -17,9 +17,12 @@
   },
   "dependencies": {
     "@mixte/use": "^2.0.2",
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@pinia/nuxt": "^0.5.2",
     "@unocss/reset": "^0.61.7",
     "@vueuse/core": "^10.11.0",
     "mixte": "^2.0.2",
+    "pinia": "^2.2.0",
     "vue": "latest"
   },
   "devDependencies": {

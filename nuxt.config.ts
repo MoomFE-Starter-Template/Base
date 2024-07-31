@@ -12,10 +12,14 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     // 将图标作为组件导入
     ['unplugin-icons/nuxt', { scale: 1 }],
+    // 状态管理
+    '@pinia/nuxt',
     // VueUse 集成
     '@vueuse/nuxt',
     // @mixte/use 集成
     '@mixte/use/nuxt',
+    // 深色模式
+    '@nuxtjs/color-mode',
   ],
 
   vite: {
@@ -29,6 +33,11 @@ export default defineNuxtConfig({
         ],
       }),
     ],
+  },
+
+  colorMode: {
+    preference: 'light',
+    classSuffix: '',
   },
 
   css: [
