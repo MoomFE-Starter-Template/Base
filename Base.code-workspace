@@ -2,6 +2,58 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "app/plugins",
+      "name": "Plugins"
+    },
+    {
+      "path": "app/assets",
+      "name": "Assets"
+    },
+    {
+      "path": "app/shared",
+      "name": "Shared"
+    },
+    {
+      "path": "app/lib",
+      "name": "Lib"
+    },
+    {
+      "path": "app/utils",
+      "name": "Utils"
+    },
+    {
+      "path": "app/workers",
+      "name": "Workers"
+    },
+    {
+      "path": "app/stores",
+      "name": "Stores"
+    },
+    {
+      "path": "app/composables",
+      "name": "Composables"
+    },
+    {
+      "path": "app/components",
+      "name": "Components"
+    },
+    {
+      "path": "app/components-private",
+      "name": "Components Private"
+    },
+    {
+      "path": "app/middleware",
+      "name": "Middleware"
+    },
+    {
+      "path": "app/layouts",
+      "name": "Layouts"
+    },
+    {
+      "path": "app/pages",
+      "name": "Pages"
     }
   ],
   "settings": {
@@ -39,6 +91,20 @@
 
     "files.exclude": {
       "*.code-workspace": true,
+      "app/assets": true,
+      "app/components": true,
+      "app/components-private": true,
+      "app/composables": true,
+      "app/layouts": true,
+      "app/lib": true,
+      "app/middleware": true,
+      "app/modules": true,
+      "app/pages": true,
+      "app/plugins": true,
+      "app/shared": true,
+      "app/stores": true,
+      "app/utils": true,
+      "app/workers": true,
       "node_modules": true
     },
   }
