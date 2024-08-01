@@ -1,11 +1,12 @@
-import type { BasicColorMode } from '@vueuse/core';
-import { isNumber } from 'mixte';
+import { isBrowser, isNumber } from 'mixte';
 
-export const useThemeStore = defineStore('theme', () => {
+export const useTheme = createSharedComposable(() => {
+  const config = useAppConfig();
+
+  /** 主题 */
   const color = useColorMode();
-
   /** 主题切换 */
-  const { state, next } = useCycleList<BasicColorMode | 'system'>(['system', 'light', 'dark'], {
+  const { state, next } = useCycleList<'system' | 'light' | 'dark'>(['system', 'light', 'dark'], {
     initialValue: color.preference as any,
   });
 
@@ -47,6 +48,14 @@ export const useThemeStore = defineStore('theme', () => {
     );
   }
 
+  // 解决客户端的水合不匹配问题
+  if (isBrowser && color.preference !== config.colorMode) {
+    const old = color.preference;
+
+    color.preference = config.colorMode;
+    nextTick(() => color.preference = old);
+  }
+
   syncRef(
     toRef(color, 'preference'),
     state,
@@ -71,14 +80,14 @@ export const useThemeStore = defineStore('theme', () => {
       ::view-transition-new(root), .dark::view-transition-old(root) {
         z-index: 9999;
       }
-    `],
+    `.replaceAll(/\s+/g, '')],
   });
 
-  return {
+  return reactive({
     value: state,
     dark,
     toggle,
-  };
+  });
 });
 
 function enableTransitions() {

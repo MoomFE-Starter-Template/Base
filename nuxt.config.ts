@@ -16,8 +16,9 @@ export default defineNuxtConfig({
   ],
 
   colorMode: {
-    preference: 'light',
+    preference: 'light', // 修改此处的值, 需要同步修改 app/app.config.ts 的 colorMode
     classSuffix: '',
+    disableTransition: true,
   },
 
   css: [

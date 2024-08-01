@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-  const theme = useThemeStore();
+  const theme = useTheme();
 </script>
 
 <style lang="scss" scoped>
