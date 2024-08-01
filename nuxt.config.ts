@@ -1,10 +1,3 @@
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import Components from 'unplugin-vue-components/vite';
-import IconsResolver from 'unplugin-icons/resolver';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -21,19 +14,6 @@ export default defineNuxtConfig({
     // 深色模式
     '@nuxtjs/color-mode',
   ],
-
-  vite: {
-    plugins: [
-      // 自动导入使用到的组件
-      Components({
-        dts: resolve(__dirname, './app/components.d.ts'),
-        dirs: [],
-        resolvers: [
-          IconsResolver(), // 图标
-        ],
-      }),
-    ],
-  },
 
   colorMode: {
     preference: 'light',
