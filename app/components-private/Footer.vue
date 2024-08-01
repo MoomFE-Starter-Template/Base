@@ -6,7 +6,7 @@
     </button>
 
     <!-- 切换深色模式 -->
-    <button title="切换深色模式" @click="theme.toggle()">
+    <button title="切换深色模式" @click="theme.toggle">
       <i-mdi-theme-light-dark v-if="theme.value === 'system'" />
       <i-ph-moon v-else-if="theme.value === 'dark'" />
       <i-ic-outline-wb-sunny v-else />
