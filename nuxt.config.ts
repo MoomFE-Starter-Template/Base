@@ -25,13 +25,17 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind-compat.css',
   ],
 
+  devtools: {
+    enabled: true,
+  },
+
   features: {
     // 针对 UnoCSS
     inlineStyles: false,
   },
 
-  devtools: {
-    enabled: true,
+  experimental: {
+    typedPages: true,
   },
 
   compatibilityDate: '2024-04-03',
