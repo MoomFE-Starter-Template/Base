@@ -13,12 +13,18 @@ export default defineNuxtConfig({
     '@mixte/use/nuxt',
     // 深色模式
     '@nuxtjs/color-mode',
+    // Element Plus
+    '@element-plus/nuxt',
   ],
 
   colorMode: {
     preference: 'light', // 修改此处的值, 需要同步修改 app/app.config.ts 的 colorMode
     classSuffix: '',
     disableTransition: true,
+  },
+
+  elementPlus: {
+    themes: ['dark'],
   },
 
   css: [
