@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      /** 接口请求基础路径 */
+      API_BASE_URL: 'https://apifoxmock.com/m1/4781098-4434938-default',
+    },
+  },
+
   modules: [
     // 原子化 CSS 引擎
     '@unocss/nuxt',

@@ -10,13 +10,13 @@
       <div el="6 op-48" bg="white dark:neutral-8" rounded mt-5 pt-7 pb-6 px-3>
         <ElForm>
           <ElFormItem>
-            <ElInput placeholder="请输入账号" />
+            <ElInput placeholder="请输入账号 ( admin )" />
           </ElFormItem>
           <ElFormItem>
-            <ElInput type="password" placeholder="请输入密码" />
+            <ElInput type="password" placeholder="请输入密码 ( 123456 )" />
           </ElFormItem>
 
-          <ElButton w-full type="primary">登录</ElButton>
+          <ElButton w-full type="primary" @click="login()">登录</ElButton>
         </ElForm>
       </div>
 
@@ -26,7 +26,11 @@
 </template>
 
 <script lang="ts" setup>
+  import { usernameLogin } from '@/apis/auth';
 
+  function login() {
+    usernameLogin();
+  }
 </script>
 
 <style lang="scss" scoped>
