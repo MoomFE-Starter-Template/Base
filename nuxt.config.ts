@@ -24,7 +24,18 @@ export default defineNuxtConfig({
   },
 
   elementPlus: {
+    importStyle: 'scss',
     themes: ['dark'],
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/css/element-plus/index.scss" as element;',
+        },
+      },
+    },
   },
 
   css: [
