@@ -40,6 +40,7 @@ export default defineNuxtConfig({
 
   css: [
     '@unocss/reset/tailwind-compat.css',
+    '@/assets/css/index.scss',
   ],
 
   devtools: {
