@@ -51,9 +51,9 @@
 - **public**: 打包后需要放到根目录的文件
 - **dist**: 打包后的代码
 - **src**: 源码
-  - [**plugins**](https://nuxt.com/docs/guide/directory-structure/plugins): Nuxt 插件
   - [**assets**](https://nuxt.com/docs/guide/directory-structure/assets): 存放静态资源
   - **shared**: 公用变量 or 函数
+  - **apis**: 接口请求定义
   - **lib**: 外部依赖库 ( 不满足需求需要重构时或者外部依赖库有 BUG 时, 从 node_modules 移至这里 )
   - [**utils**](https://nuxt.com/docs/guide/directory-structure/utils): 工具函数
   - **workers**: 存放独立的 Web Worker 应用
@@ -61,6 +61,7 @@
   - [**composables**](https://nuxt.com/docs/guide/directory-structure/composables): 组合式函数
   - [**components**](https://nuxt.com/docs/guide/directory-structure/components): 公共组件 ( 相对独立的组件, 离开当前项目也能使用的组件 )
   - **components-private**: 私有组件 ( 只能在当前项目中使用的组件, 比如说包含了业务代码的组件 )
+  - [**plugins**](https://nuxt.com/docs/guide/directory-structure/plugins): Nuxt 插件
   - [**middleware**](https://nuxt.com/docs/guide/directory-structure/middleware): 路由中间件
   - [**layouts**](https://nuxt.com/docs/guide/directory-structure/layouts): 布局组件
   - [**pages**](https://nuxt.com/docs/guide/directory-structure/pages): 页面

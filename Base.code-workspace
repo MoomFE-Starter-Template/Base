@@ -1,59 +1,64 @@
 {
   "folders": [
     {
+      "name": "Base",
       "path": "."
     },
     {
-      "path": "app/plugins",
-      "name": "Plugins"
+      "name": "Assets",
+      "path": "app/assets"
     },
     {
-      "path": "app/assets",
-      "name": "Assets"
+      "name": "Shared",
+      "path": "app/shared"
     },
     {
-      "path": "app/shared",
-      "name": "Shared"
+      "name": "Apis",
+      "path": "app/apis"
     },
     {
-      "path": "app/lib",
-      "name": "Lib"
+      "name": "Lib",
+      "path": "app/lib"
     },
     {
-      "path": "app/utils",
-      "name": "Utils"
+      "name": "Utils",
+      "path": "app/utils"
     },
     {
-      "path": "app/workers",
-      "name": "Workers"
+      "name": "Workers",
+      "path": "app/workers"
     },
     {
-      "path": "app/stores",
-      "name": "Stores"
+      "name": "Stores",
+      "path": "app/stores"
     },
     {
-      "path": "app/composables",
-      "name": "Composables"
+      "name": "Composables",
+      "path": "app/composables"
     },
     {
-      "path": "app/components",
-      "name": "Components"
+      "name": "Components",
+      "path": "app/components"
     },
     {
-      "path": "app/components-private",
-      "name": "Components Private"
+      "name": "Components Private",
+      "path": "app/components-private"
     },
     {
-      "path": "app/middleware",
-      "name": "Middleware"
+      "name": "Plugins",
+      "path": "app/plugins"
     },
     {
-      "path": "app/layouts",
-      "name": "Layouts"
+      "name": "Middleware",
+      "path": "app/middleware"
     },
     {
-      "path": "app/pages",
-      "name": "Pages"
+      "name": "Layouts",
+      "path": "app/layouts"
+    },
+    {
+      "name": "Pages",
+      "path": "app/pages"
     }
   ],
   "settings": {
@@ -91,6 +96,7 @@
 
     "files.exclude": {
       "*.code-workspace": true,
+      "app/apis": true,
       "app/assets": true,
       "app/components": true,
       "app/components-private": true,
