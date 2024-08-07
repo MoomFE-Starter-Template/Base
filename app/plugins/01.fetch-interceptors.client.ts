@@ -8,7 +8,7 @@ import type { ResponseData } from '@/apis/types';
 export default defineNuxtPlugin((nuxtApp) => {
   // @ts-expect-error 请求拦截器钩子
   nuxtApp.hook('fetch:onRequest', ({ options }: FetchContext) => {
-    options.responseType ||= 'json';
+    options.responseType ??= 'json';
   });
 
   // @ts-expect-error 响应拦截器钩子
