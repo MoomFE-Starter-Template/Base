@@ -1,3 +1,11 @@
+import type { ResponseData } from './types';
+
+/** 登录响应数据 */
+export interface LoginResponse {
+  access_token: string;
+  expires_in: number;
+}
+
 /** 账号密码登录数据 */
 export interface UsernameLoginData {
   username: string;
@@ -6,7 +14,7 @@ export interface UsernameLoginData {
 
 /** 账号密码登录 */
 export function usernameLogin(data: UsernameLoginData) {
-  return $fetch('/auth/login', {
+  return $fetch<ResponseData<LoginResponse>>('/auth/login', {
     method: 'POST',
     body: data,
   });

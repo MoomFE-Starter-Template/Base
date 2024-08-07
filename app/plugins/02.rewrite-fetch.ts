@@ -28,6 +28,13 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     // 响应拦截器
     async onResponse(context) {
+      const { request } = context;
+
+      // 还没遇到非字符串的场景, 先不处理
+      if (!isString(request)) return;
+      // 请求的是 Nuxt 生成的文件
+      if (request.startsWith('/_nuxt/')) return;
+
       // @ts-expect-error 响应拦截器钩子
       await nuxtApp.callHook('fetch:onResponse', context);
     },
