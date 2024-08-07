@@ -34,6 +34,8 @@
 <script lang="tsx" setup>
   import UsernameForm from './components/username-form.vue';
 
+  const config = useAppConfig();
+
   const auth = useAuthStore();
 
   const formRef = ref<InstanceType<typeof UsernameForm>>();
@@ -44,6 +46,12 @@
     await formRef.value!.validate();
     await checkAgree();
     await formRef.value!.login();
+
+    ElMessage.success({
+      message: '登录成功',
+      duration: 1500,
+      onClose: () => navigateTo(config.defaultRedirect),
+    });
   }
 
   async function checkAgree() {
