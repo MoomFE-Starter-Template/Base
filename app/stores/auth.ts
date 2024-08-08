@@ -1,5 +1,4 @@
-import { deepClone } from 'mixte';
-import { type UsernameLoginData, usernameLogin } from '@/apis/auth';
+import { type UsernameLoginData, getUserInfo, usernameLogin } from '@/apis/auth';
 import { accessToken } from '@/shared/env';
 
 export const useAuthStore = defineStore('auth', () => {
@@ -13,9 +12,18 @@ export const useAuthStore = defineStore('auth', () => {
     });
   });
 
+  /** 用户信息 */
+  const info = useRequest(getUserInfo);
+
+  // 登录后获取用户信息
+  wheneverImmediate(isLogin, () => {
+    info.execute();
+  });
+
   return {
     isLogin,
 
     loginByUsername,
+    info,
   };
 });

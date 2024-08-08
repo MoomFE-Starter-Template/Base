@@ -12,10 +12,23 @@ export interface UsernameLoginData {
   password: string;
 }
 
+/** 用户信息 */
+export interface UserInfo {
+  id: string;
+  username: string;
+  name: string;
+  avatar: string;
+}
+
 /** 账号密码登录 */
 export function usernameLogin(data: UsernameLoginData) {
   return $fetch<ResponseData<LoginResponse>>('/auth/login', {
     method: 'POST',
     body: data,
   });
+}
+
+/** 获取登录用户信息 */
+export function getUserInfo() {
+  return $fetch<ResponseData<UserInfo>>('/auth/info');
 }
