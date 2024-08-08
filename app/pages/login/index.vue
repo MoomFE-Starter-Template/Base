@@ -50,7 +50,7 @@
     ElMessage.success({
       message: '登录成功',
       duration: 1500,
-      onClose: () => navigateTo(config.defaultRedirect),
+      onClose: () => navigateTo(config.defaultRedirectPath),
     });
   }
 

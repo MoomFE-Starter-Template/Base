@@ -6,7 +6,12 @@ export default defineAppConfig({
   colorMode: 'light',
   /**
    * 默认跳转页
-   *  - 登录后的默认跳转页
+   *  - 用于登录后的默认跳转
    */
-  defaultRedirect: '/',
+  defaultRedirectPath: '/',
+  /**
+   * 登录页
+   *  - 用户用户鉴权失效时的跳转
+   */
+  loginPath: '/login',
 });
