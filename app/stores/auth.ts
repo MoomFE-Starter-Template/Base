@@ -1,4 +1,4 @@
-import { type UsernameLoginData, getUserInfo, usernameLogin } from '@/apis/auth';
+import { type UsernameLoginData, getUserInfo, logout as toLogout, usernameLogin } from '@/apis/auth';
 import { accessToken } from '@/shared/env';
 
 export const useAuthStore = defineStore('auth', () => {
@@ -6,24 +6,35 @@ export const useAuthStore = defineStore('auth', () => {
   const isLogin = computed(() => !!accessToken.value);
 
   /** 用户名登录 */
-  const loginByUsername = useRequest((data: UsernameLoginData) => {
+  const loginByUsername = useRequestReactive((data: UsernameLoginData) => {
     return usernameLogin(data).then((res) => {
       accessToken.value = res.data.access_token;
     });
   });
 
   /** 用户信息 */
-  const info = useRequest(getUserInfo);
+  const info = useRequestReactive(getUserInfo);
 
   // 登录后获取用户信息
   wheneverImmediate(isLogin, () => {
     info.execute();
   });
 
+  /** 退出登录 */
+  const logout = useRequestReactive((showToast?: boolean) => {
+    return toLogout().finally(() => {
+      accessToken.value = '';
+      if (showToast) {
+        ElMessage.success('退出登录成功');
+      }
+    });
+  });
+
   return {
     isLogin,
 
-    loginByUsername,
-    info,
+    loginByUsername: computed(() => loginByUsername),
+    info: computed(() => info),
+    logout: computed(() => logout),
   };
 });

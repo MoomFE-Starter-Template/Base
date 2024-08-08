@@ -32,3 +32,10 @@ export function usernameLogin(data: UsernameLoginData) {
 export function getUserInfo() {
   return $fetch<ResponseData<UserInfo>>('/auth/info');
 }
+
+/** 退出登录 */
+export function logout() {
+  return $fetch<ResponseData<UserInfo>>('/auth/logout', {
+    method: 'POST',
+  });
+}
