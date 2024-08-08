@@ -33,6 +33,7 @@
 
 <script lang="tsx" setup>
   import UsernameForm from './components/username-form.vue';
+  import SpinnersRing from '~icons/svg-spinners/ring-resize';
 
   const config = useAppConfig();
 
@@ -50,7 +51,7 @@
     ElMessage.success({
       message: '登录成功',
       duration: 1500,
-      onClose: () => navigateTo(config.defaultRedirectPath),
+      onClose: () => navigateTo(config.defaultRedirectPath, { replace: true }),
     });
   }
 
@@ -89,6 +90,26 @@
   function no() {
     ElMessage.error('暂无');
   }
+
+  // 进入登录页时, 如果已登录, 更新一下用户信息, 如果没报错说明 Token 没过期, 的确在登录状态, 则跳转到默认页
+  onMounted(async () => {
+    if (!auth.isLogin) return;
+
+    const message = ElMessage.info({ message: '正在获取登录状态 ...', icon: SpinnersRing, plain: true, duration: 0 });
+
+    try {
+      await auth.info.execute();
+      message.close();
+      ElMessage.success({
+        message: '您已登录',
+        duration: 1500,
+        onClose: () => navigateTo(config.defaultRedirectPath, { replace: true }),
+      });
+    }
+    catch {
+      message.close();
+    }
+  });
 </script>
 
 <style lang="scss" scoped>
