@@ -9,23 +9,24 @@
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io) 优先 - 就是快！
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
 - 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 150+ 图标集, 200000+ 图标为你所用, 从不妥协
+- 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 🌙 深色模式
 - 🦾 TypeScript 支持
+- ☁️ 零配置部署 Netlify 和 Vercel
 
 <br>
 
 ## 预配置
 
-### UI 框架
+### UI 框架 & 组件库
   - [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
+  - [Element Plus](https://element-plus.org/zh-CN)
 
 ### Icons
   - [Iconify](https://iconify.design) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
     - [用组件的方式使用图标](https://github.com/unplugin/unplugin-icons)
     - [用 CSS 的方式使用图标](https://unocss.dev/presets/icons)
-
-### 组件库
-  - 待添加
 
 ### 插件
   - [VueUse](https://vueuse.org) - 实用的 Composition API 工具合集
