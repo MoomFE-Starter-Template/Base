@@ -92,10 +92,10 @@
 这部分逻辑是在 [layers/requiresAuth](./layers/requiresAuth/) 中实现的, 可根据使用情况自行修改, 若不需要登录鉴权, 可以删除该文件夹
 
 ```ts
-defineRouteRules({
-  ssr: false // 禁用服务器端渲染
-});
 definePageMeta({
   requiresAuth: true // 设置页面需要登录才能访问
+});
+defineRouteRules({
+  ssr: false // 禁用服务器端渲染
 });
 ```
