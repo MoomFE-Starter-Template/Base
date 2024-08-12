@@ -5,7 +5,12 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
   // 未登录则跳转到登录页
   if (!auth.isLogin) {
-    return navigateTo(useAppConfig().loginPath);
+    return navigateTo({
+      path: useAppConfig().loginPath,
+      query: {
+        redirect: to.fullPath,
+      },
+    });
   }
 
   // 确保用户信息获取到了

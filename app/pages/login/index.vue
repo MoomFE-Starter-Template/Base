@@ -37,6 +37,7 @@
 
   const config = useAppConfig();
 
+  const route = useRoute();
   const auth = useAuthStore();
 
   const formRef = ref<InstanceType<typeof UsernameForm>>();
@@ -51,7 +52,7 @@
     ElMessage.success({
       message: '登录成功',
       duration: 1500,
-      onClose: () => navigateTo(config.defaultRedirectPath, { replace: true }),
+      onClose: redirect,
     });
   }
 
@@ -91,6 +92,14 @@
     ElMessage.error('暂无');
   }
 
+  function redirect() {
+    const path = (route.query.redirect as string) || config.defaultRedirectPath;
+
+    navigateTo(path, {
+      replace: true,
+    });
+  }
+
   // 进入登录页时, 如果已登录, 更新一下用户信息, 如果没报错说明 Token 没过期, 的确在登录状态, 则跳转到默认页
   onMounted(async () => {
     if (!auth.isLogin) return;
@@ -103,7 +112,7 @@
       ElMessage.success({
         message: '您已登录',
         duration: 1500,
-        onClose: () => navigateTo(config.defaultRedirectPath, { replace: true }),
+        onClose: redirect,
       });
     }
     catch {

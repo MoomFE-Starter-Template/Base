@@ -10,7 +10,7 @@
 
     <div flex="~ justify-center wrap gap-2" mt-5>
       <!-- 登录跳转和用户信息展示 -->
-      <ElPopover title="当前登录用户信息展示" :width="250" :disabled="!auth.isLogin">
+      <ElPopover title="当前登录用户信息展示" :width="250" :disabled="!auth.isLogin" :hide-after="0">
         <!-- 用户信息展示 -->
         <UserInfo />
 
@@ -22,9 +22,14 @@
         </template>
       </ElPopover>
       <!-- 登录鉴权 -->
-      <RouterLink to="/demo/requiresAuth">
-        <ElButton text bg>登录鉴权</ElButton>
-      </RouterLink>
+      <ElPopover>
+        未登录时无法访问, 并跳转到登录页
+        <template #reference>
+          <RouterLink to="/demo/requiresAuth">
+            <ElButton text bg>登录鉴权</ElButton>
+          </RouterLink>
+        </template>
+      </ElPopover>
     </div>
   </ClientOnly>
 </template>
