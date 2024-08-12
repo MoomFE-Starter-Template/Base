@@ -1,6 +1,6 @@
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { addVitePlugin, defineNuxtModule } from '@nuxt/kit';
+import { addVitePlugin, defineNuxtModule } from 'nuxt/kit';
 import Components from 'unplugin-vue-components/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 

@@ -1,12 +1,11 @@
-import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalizePath } from 'vite';
-import { addVitePlugin, defineNuxtModule } from '@nuxt/kit';
+import { dirname, resolve } from 'pathe';
+import { addVitePlugin, defineNuxtModule } from 'nuxt/kit';
 import { parseModule } from 'magicast';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const storesPath = normalizePath(resolve(__dirname, '../app/stores'));
+const storesPath = resolve(__dirname, '../app/stores');
 
 export default defineNuxtModule({
   hooks: {
