@@ -85,6 +85,10 @@
 
 ## 指南
 
+### 项目配置
+
+项目配置在 [app/app.config.ts](./app/app.config.ts), 包含 `网站标题`、`主题色`、`跳转页`、`登录页` 等配置, 可根据需求自行修改
+
 ### 登录鉴权
 
 使用 `definePageMeta` 时定义 `requiresAuth: true` 设置该页面需要登录才能访问, 同时需要将该页面禁用服务器端渲染
@@ -99,3 +103,7 @@ defineRouteRules({
   ssr: false // 禁用服务器端渲染
 });
 ```
+
+## 常见问题
+
+待添加 ...

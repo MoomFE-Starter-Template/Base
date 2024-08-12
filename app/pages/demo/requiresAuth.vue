@@ -5,6 +5,10 @@
 </template>
 
 <script lang="ts" setup>
+  useHead({
+    title: '登录鉴权示例页',
+  });
+
   defineRouteRules({ ssr: false });
   definePageMeta({
     layout: 'home',

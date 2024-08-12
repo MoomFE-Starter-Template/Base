@@ -35,6 +35,10 @@
   import UsernameForm from './components/username-form.vue';
   import SpinnersRing from '~icons/svg-spinners/ring-resize';
 
+  useHead({
+    title: '登录',
+  });
+
   const config = useAppConfig();
 
   const route = useRoute();
