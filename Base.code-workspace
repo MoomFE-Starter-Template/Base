@@ -95,6 +95,8 @@
     "unocss.remToPxPreview": true,
 
     "files.exclude": {
+      ".nuxt": true,
+      ".output": true,
       "*.code-workspace": true,
       "app/apis": true,
       "app/assets": true,
