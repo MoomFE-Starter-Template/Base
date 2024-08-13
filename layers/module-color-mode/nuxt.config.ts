@@ -1,8 +1,6 @@
 import type { ColorSchema } from './types';
 
-/**
- * 默认颜色模式
- */
+/** 默认颜色模式 */
 const defaultColorMode: ColorSchema = 'light';
 
 export default defineNuxtConfig({
