@@ -88,28 +88,15 @@
 
 项目配置在 [app/app.config.ts][app.config.ts], 包含 `网站标题`、`跳转页`、`登录页` 等配置, 可根据需求自行修改
 
-### 登录鉴权
+### [登录鉴权](./layers/requires-auth/)
 
-使用 `definePageMeta` 时定义 `requiresAuth: true` 设置该页面需要登录才能访问, 同时需要将该页面禁用服务器端渲染
+使用说明可查看 [layers/requires-auth/README.md](./layers/requires-auth/README.md)
 
-这部分逻辑是在 [layers/requiresAuth](./layers/requiresAuth/) 中实现的, 可根据需求自行修改, 若不需要登录鉴权, 可以删除该文件夹
-
-```vue
-<script lang="ts" setup>
-  definePageMeta({
-    requiresAuth: true // 设置页面需要登录才能访问
-  });
-  defineRouteRules({
-    ssr: false // 禁用服务器端渲染
-  });
-</script>
-```
-
-### 颜色模式
+### 配置 [颜色模式](./layers/module-color-mode/)
 
 使用说明可查看 [layers/module-color-mode/README.md](./layers/module-color-mode/README.md)
 
-### 配置 [UnoCSS][unocss]
+### 配置 [UnoCSS](./layers/module-unocss/)
 
 使用说明可查看 [layers/module-unocss/README.md](./layers/module-unocss/README.md)
 
