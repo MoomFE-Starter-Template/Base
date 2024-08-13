@@ -21,7 +21,7 @@
 
 ### UI 框架 & 组件库
   - [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
-  - [Element Plus](https://element-plus.org/zh-CN)
+  - [Element Plus][element-plus]
 
 ### Icons
   - [Iconify](https://iconify.design) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
@@ -93,7 +93,7 @@
 
 使用 `definePageMeta` 时定义 `requiresAuth: true` 设置该页面需要登录才能访问, 同时需要将该页面禁用服务器端渲染
 
-这部分逻辑是在 [layers/requiresAuth](./layers/requiresAuth/) 中实现的, 可根据使用情况自行修改, 若不需要登录鉴权, 可以删除该文件夹
+这部分逻辑是在 [layers/requiresAuth](./layers/requiresAuth/) 中实现的, 可根据需求自行修改, 若不需要登录鉴权, 可以删除该文件夹
 
 ```ts
 definePageMeta({
@@ -104,6 +104,12 @@ defineRouteRules({
 });
 ```
 
+### 配置 [Element Plus](element-plus)
+
+对 [Element Plus](element-plus) 的配置、主题定制相关的代码在 [layers/module-element-plus](./layers/module-element-plus/), 可根据需求自行修改, 若不需要 [Element Plus](element-plus), 可以删除该文件夹, 并删除 `element-plus`、`@element-plus/nuxt` 依赖库
+
 ## 常见问题
 
 待添加 ...
+
+[element-plus]: https://element-plus.org/zh-CN
