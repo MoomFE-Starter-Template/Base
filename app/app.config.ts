@@ -10,7 +10,7 @@ export default defineAppConfig({
   titleTemplate: (title?: string) => `${title ?? '基础项目模板'} - MoomFE`,
   /**
    * 默认主题色
-   *  - 修改此处的值, 需要同步修改 nuxt.config.ts 的 colorMode.preference
+   *  - 修改此处的值, 需要同步修改 layers/module-color-mode/nuxt.config.ts 的 colorMode.preference 选项
    */
   colorMode: 'light',
   /**

@@ -2,6 +2,7 @@ import { isBrowser, isNumber } from 'mixte';
 import { toggleThemeViewTransition } from '@mixte/snippets/toggleThemeViewTransition';
 
 export const useTheme = createSharedComposable(() => {
+  const nuxt = useNuxtApp();
   const config = useAppConfig();
 
   /** 主题 */
