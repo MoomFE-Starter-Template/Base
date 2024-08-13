@@ -25,10 +25,6 @@
       "path": "app/utils"
     },
     {
-      "name": "Workers",
-      "path": "app/workers"
-    },
-    {
       "name": "Stores",
       "path": "app/stores"
     },
@@ -112,7 +108,6 @@
       "app/shared": true,
       "app/stores": true,
       "app/utils": true,
-      "app/workers": true,
       "node_modules": true
     },
   }
