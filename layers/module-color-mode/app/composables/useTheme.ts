@@ -1,14 +1,14 @@
 import { isBrowser, isNumber } from 'mixte';
 import { toggleThemeViewTransition } from '@mixte/snippets/toggleThemeViewTransition';
+import { type ColorSchema, colorSchema } from '../../types';
 
 export const useTheme = createSharedComposable(() => {
-  const nuxt = useNuxtApp();
-  const config = useAppConfig();
+  const runtimeConfig = useRuntimeConfig();
 
   /** 主题 */
   const color = useColorMode();
   /** 主题切换 */
-  const { state, next } = useCycleList<'system' | 'light' | 'dark'>(['system', 'light', 'dark'], {
+  const { state, next } = useCycleList<ColorSchema>(colorSchema as any, {
     initialValue: color.preference as any,
   });
 
@@ -36,10 +36,10 @@ export const useTheme = createSharedComposable(() => {
   }
 
   // 解决客户端的水合不匹配问题
-  if (isBrowser && color.preference !== config.colorMode) {
+  if (isBrowser && color.preference !== runtimeConfig.app.defaultColorMode) {
     const old = color.preference;
 
-    color.preference = config.colorMode;
+    color.preference = runtimeConfig.app.defaultColorMode;
     nextTick(() => color.preference = old);
   }
 

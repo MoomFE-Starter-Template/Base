@@ -1,9 +1,21 @@
+import type { ColorSchema } from './types';
+
+/**
+ * 默认颜色模式
+ */
+const defaultColorMode: ColorSchema = 'light';
+
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
   ],
+  runtimeConfig: {
+    app: {
+      defaultColorMode,
+    },
+  },
   colorMode: {
-    preference: 'light', // 修改此处的值, 需要同步修改 app/app.config.ts 的 colorMode
+    preference: defaultColorMode,
     classSuffix: '',
     disableTransition: true,
   },

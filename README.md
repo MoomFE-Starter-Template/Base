@@ -86,7 +86,7 @@
 
 ### 项目配置
 
-项目配置在 [app/app.config.ts][app.config.ts], 包含 `网站标题`、`主题色`、`跳转页`、`登录页` 等配置, 可根据需求自行修改
+项目配置在 [app/app.config.ts][app.config.ts], 包含 `网站标题`、`跳转页`、`登录页` 等配置, 可根据需求自行修改
 
 ### 登录鉴权
 
@@ -124,13 +124,13 @@
 </script>
 ```
 
-考虑到很多场景都不考虑深色模式, 所以该模板默认为浅色模式, 这样只要不使用 `useTheme` 就无任何影响, 若要修改默认主题色, 可修改 [app/app.config.ts][app.config.ts] 的 `colorMode` 配置, 并且需要同步修改 [layers/module-color-mode/nuxt.config.ts](./layers/module-color-mode/nuxt.config.ts) 的 `colorMode.preference` 选项
+考虑到很多场景都不考虑深色模式, 所以该模板默认为浅色模式, 这样只要不使用 `useTheme` 就无任何影响, 若要修改默认主题色, 可修改 [layers/module-color-mode/nuxt.config.ts](./layers/module-color-mode/nuxt.config.ts) 的 `defaultColorMode` 变量、清除 `localStorage` 然后重启项目即可
 
-若完全不需要深色模式, 可以删除 [layers/module-color-mode](./layers/module-color-mode/) 文件夹, 并删除 `@nuxtjs/color-mode` 依赖库及 [app/app.config.ts][app.config.ts] 的 `colorMode` 配置
+若完全不需要深色模式, 可以删除 [layers/module-color-mode](./layers/module-color-mode/) 文件夹
 
 ### 配置 [UnoCSS][unocss]
 
-对 [UnoCSS][unocss] 的 `安装`、`配置`、`样式重置导入` 相关的代码在 [layers/module-unocss](./layers/module-unocss/), 可根据需求自行修改, 若不需要 [UnoCSS][unocss], 可以删除该文件夹, 并删除 `unocss`、`@unocss/reset`、`@unocss/reset`、`unocss-preset-extra` 依赖库
+对 [UnoCSS][unocss] 的 `安装`、`配置`、`CSS 重置样式导入` 相关的代码在 [layers/module-unocss](./layers/module-unocss/), 可根据需求自行修改, 若不需要 [UnoCSS][unocss], 可以删除该文件夹, 并删除 `unocss`、`@unocss/reset`、`@unocss/reset`、`unocss-preset-extra` 依赖库
 
 ### 配置 [Element Plus](element-plus)
 
