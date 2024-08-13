@@ -25,7 +25,7 @@
 
 ### Icons
   - [Iconify](https://iconify.design) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
-    - [用组件的方式使用图标](https://github.com/unplugin/unplugin-icons)
+    - [用组件的方式使用图标](./layers/module-icons/README.md)
     - [用 CSS 的方式使用图标](https://unocss.dev/presets/icons)
 
 ### 插件
