@@ -113,9 +113,9 @@
 
 对 [UnoCSS][unocss] 的 `安装`、`配置`、`CSS 重置样式导入` 相关的代码在 [layers/module-unocss](./layers/module-unocss/), 可根据需求自行修改, 若不需要 [UnoCSS][unocss], 可以删除该文件夹, 并删除 `unocss`、`@unocss/reset`、`@unocss/reset`、`unocss-preset-extra` 依赖库
 
-### 配置 [Element Plus](element-plus)
+### 配置 [Element Plus](./layers/module-element-plus/)
 
-对 [Element Plus](element-plus) 的 `安装`、`配置`、`主题定制` 相关的代码在 [layers/module-element-plus](./layers/module-element-plus/), 可根据需求自行修改, 若不需要 [Element Plus](element-plus), 可以删除该文件夹, 并删除 `element-plus`、`@element-plus/nuxt` 依赖库
+使用说明可查看 [layers/module-element-plus/README.md](./layers/module-element-plus/README.md)
 
 ## 常见问题
 
@@ -124,4 +124,3 @@
 [app.config.ts]: ./app/app.config.ts
 
 [unocss]: https://unocss.dev/
-[element-plus]: https://element-plus.org/zh-CN
