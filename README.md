@@ -7,7 +7,7 @@
 
 - 💚 [Nuxt](https://nuxt.com) - SSR、SSG、[布局](https://nuxt.com/docs/guide/directory-structure/layouts)、[基于文件的路由](https://nuxt.com/docs/getting-started/routing)、[组件、API 自动导入](https://nuxt.com/docs/guide/concepts/auto-imports)
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io) 优先 - 就是快！
-- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
+- 🎨 [UnoCSS][unocss] - 高性能且极具灵活性的原子化 CSS 引擎
 - 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 150+ 图标集, 200000+ 图标为你所用, 从不妥协
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
@@ -20,7 +20,7 @@
 ## 预配置
 
 ### UI 框架 & 组件库
-  - [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的原子化 CSS 引擎
+  - [UnoCSS][unocss] - 高性能且极具灵活性的原子化 CSS 引擎
   - [Element Plus][element-plus]
 
 ### Icons
@@ -103,12 +103,17 @@ defineRouteRules({
 });
 ```
 
+### 配置 [UnoCSS][unocss]
+
+对 [UnoCSS][unocss] 的 `安装`、`配置`、`样式重置导入` 相关的代码在 [layers/module-unocss](./layers/module-unocss/), 可根据需求自行修改, 若不需要 [UnoCSS][unocss], 可以删除该文件夹, 并删除 `unocss`、`@unocss/reset`、`@unocss/reset`、`unocss-preset-extra` 依赖库
+
 ### 配置 [Element Plus](element-plus)
 
-对 [Element Plus](element-plus) 的配置、主题定制相关的代码在 [layers/module-element-plus](./layers/module-element-plus/), 可根据需求自行修改, 若不需要 [Element Plus](element-plus), 可以删除该文件夹, 并删除 `element-plus`、`@element-plus/nuxt` 依赖库
+对 [Element Plus](element-plus) 的 `安装`、`配置`、`主题定制` 相关的代码在 [layers/module-element-plus](./layers/module-element-plus/), 可根据需求自行修改, 若不需要 [Element Plus](element-plus), 可以删除该文件夹, 并删除 `element-plus`、`@element-plus/nuxt` 依赖库
 
 ## 常见问题
 
 待添加 ...
 
+[unocss]: https://unocss.dev/
 [element-plus]: https://element-plus.org/zh-CN

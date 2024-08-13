@@ -8,8 +8,6 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    // 原子化 CSS 引擎
-    '@unocss/nuxt',
     // 将图标作为组件导入
     ['unplugin-icons/nuxt', { scale: 1 }],
     // 状态管理
@@ -29,17 +27,11 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '@unocss/reset/tailwind-compat.css',
     '@/assets/css/index.scss',
   ],
 
   devtools: {
     enabled: true,
-  },
-
-  features: {
-    // 针对 UnoCSS
-    inlineStyles: false,
   },
 
   experimental: {
