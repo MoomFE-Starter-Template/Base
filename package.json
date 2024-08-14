@@ -34,7 +34,6 @@
     "@unocss/nuxt": "^0.61.9",
     "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.8.0",
-    "magicast": "^0.3.4",
     "nuxt": "^3.12.4",
     "pathe": "^1.1.2",
     "sass": "^1.77.8",
