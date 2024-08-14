@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   modules: [
     '@element-plus/nuxt',
   ],
+  // https://nuxt.com/modules/element-plus
   elementPlus: {
     importStyle: 'scss',
     themes: ['dark'],

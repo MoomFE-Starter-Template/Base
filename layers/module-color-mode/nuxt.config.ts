@@ -12,6 +12,7 @@ export default defineNuxtConfig({
       defaultColorMode,
     },
   },
+  // https://nuxt.com/modules/color-mode
   colorMode: {
     preference: defaultColorMode,
     classSuffix: '',

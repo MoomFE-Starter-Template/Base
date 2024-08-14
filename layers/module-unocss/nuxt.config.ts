@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
   ],
+  // https://unocss.dev/integrations/nuxt
   unocss: {
     configFile: resolve(__dirname, 'unocss.config.ts'),
   },
