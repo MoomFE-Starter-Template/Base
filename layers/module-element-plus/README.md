@@ -1,6 +1,6 @@
 ## [Element Plus][element-plus]
 
-此文件夹包含对 [Element Plus](element-plus) 的组件、指令、样式的自动导入等功能
+此文件夹包含对 [Element Plus](element-plus) 的配置
 
 提供了 [主题定制](./app/assets/css/element-plus/index.scss) 示例
 
