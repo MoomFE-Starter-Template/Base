@@ -18,11 +18,14 @@
   "dependencies": {
     "@mixte/snippets": "^2.1.0",
     "@mixte/use": "^2.1.0",
+    "@primevue/themes": "^4.0.4",
     "@unocss/reset": "^0.61.9",
     "@vueuse/core": "^10.11.0",
     "element-plus": "^2.7.8",
     "mixte": "^2.1.0",
     "pinia": "^2.2.0",
+    "primevue": "^4.0.4",
+    "theme-colors": "^0.1.0",
     "vue": "latest"
   },
   "devDependencies": {
@@ -31,6 +34,7 @@
     "@moomfe/eslint-config": "^3.2.0",
     "@nuxtjs/color-mode": "^3.4.2",
     "@pinia/nuxt": "^0.5.2",
+    "@primevue/nuxt-module": "^4.0.4",
     "@unocss/nuxt": "^0.61.9",
     "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.8.0",
