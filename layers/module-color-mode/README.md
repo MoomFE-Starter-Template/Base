@@ -19,6 +19,6 @@
 
 考虑到很多场景都不考虑深色模式, 所以该模板默认为浅色模式, 这样只要不使用 [`useTheme`][useTheme] 就无任何影响, 若要修改默认主题色, 可修改 [nuxt.config.ts](./nuxt.config.ts) 的 `defaultColorMode` 变量、清除 `localStorage` 然后重启项目即可
 
-若完全不需要深色模式, 可以删除当前文件夹
+若完全不需要深色模式, 可以删除当前文件夹, 并删除 `@nuxtjs/color-mode` 依赖库
 
 [useTheme]: ./app/composables/useTheme.ts

@@ -24,3 +24,5 @@
 ```
 
 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
+
+不使用组件图标不会增加体积, 但若完全不需要该功能, 可以删除当前文件夹, 并删除 `unplugin-icons` 依赖库
