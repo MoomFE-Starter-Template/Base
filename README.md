@@ -7,7 +7,7 @@
 
 - 💚 [Nuxt](https://nuxt.com) - SSR、SSG、[布局](https://nuxt.com/docs/guide/directory-structure/layouts)、[基于文件的路由](https://nuxt.com/docs/getting-started/routing)、[组件、API 自动导入](https://nuxt.com/docs/guide/concepts/auto-imports)
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io) 优先 - 就是快！
-- 🎨 [UnoCSS][unocss] - 高性能且极具灵活性的原子化 CSS 引擎
+- 🎨 [UnoCSS](https://unocss.dev) - 高性能且极具灵活性的原子化 CSS 引擎
 - 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 150+ 图标集, 200000+ 图标为你所用, 从不妥协
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
@@ -20,9 +20,9 @@
 ## 预配置
 
 ### UI 框架 & 组件库
-  - [UnoCSS][unocss] - 高性能且极具灵活性的原子化 CSS 引擎
-  - [Element Plus][element-plus]
-  - [PrimeVue][prime-vue]
+  - [UnoCSS](https://unocss.dev) - 高性能且极具灵活性的原子化 CSS 引擎
+  - [Element Plus](https://element-plus.org/zh-CN)
+  - [PrimeVue](https://primevue.org)
 
 ### Icons
   - [Iconify](https://iconify.design) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
@@ -114,6 +114,3 @@
 待添加 ...
 
 [app.config.ts]: ./app/app.config.ts
-
-[element-plus]: https://element-plus.org/zh-CN
-[prime-vue]: https://primevue.org
