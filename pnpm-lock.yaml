@@ -75,6 +75,9 @@ importers:
       pathe:
         specifier: ^1.1.2
         version: 1.1.2
+      pnpm:
+        specifier: ^9.7.1
+        version: 9.7.1
       sass:
         specifier: ^1.77.8
         version: 1.77.8
@@ -3606,6 +3609,11 @@ packages:
   pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
+
+  pnpm@9.7.1:
+    resolution: {integrity: sha512-+vNEry1splxMXIwiJOp3qBpeiFnLxOBrFRHdzi8BUVEkMd0Z5q/zHyxqj18qztm9InPh/tfdTeGGiYQFnSxCRw==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   postcss-calc@10.0.0:
     resolution: {integrity: sha512-OmjhudoNTP0QleZCwl1i6NeBwN+5MZbY5ersLZz69mjJiDVv/p57RjRuKDkHeDWr4T+S97wQfsqRTNoDHB2e3g==}
@@ -8975,6 +8983,8 @@ snapshots:
       pathe: 1.1.2
 
   pluralize@8.0.0: {}
+
+  pnpm@9.7.1: {}
 
   postcss-calc@10.0.0(postcss@8.4.39):
     dependencies:

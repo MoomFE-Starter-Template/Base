@@ -2,6 +2,7 @@
   "name": "nuxt-base",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@9.7.1",
   "author": "Wei Zhang <https://github.com/Zhang-Wei-666>",
   "homepage": "https://github.com/MoomFE-Starter-Template/Base",
   "scripts": {
@@ -10,8 +11,8 @@
     "build:ssr": "pnpm i && nuxt build",
     "preview": "pnpm build && nuxt preview --host",
     "preview:ssr": "pnpm build:ssr && nuxt preview --host",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "pnpm i && eslint .",
+    "lint:fix": "pnpm i && eslint . --fix",
     "up": "npx taze latest -w -i",
     "postinstall": "nuxt prepare"
   },
@@ -40,6 +41,7 @@
     "eslint": "^9.8.0",
     "nuxt": "^3.12.4",
     "pathe": "^1.1.2",
+    "pnpm": "^9.7.1",
     "sass": "^1.77.8",
     "type-fest": "^4.24.0",
     "typescript": "^5.5.4",
