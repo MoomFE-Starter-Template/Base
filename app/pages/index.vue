@@ -6,6 +6,7 @@
   <div class="mt-6">
     <input
       v-model="name"
+      id="name-input"
       class="w-62.5 max-w-full border border-gray-400 rounded-md outline-none text-center bg-transparent px-3 py-1.5"
       placeholder="你的名字是？"
       @keydown.enter="go"
@@ -13,7 +14,7 @@
   </div>
 
   <div class="mt-3">
-    <Button :disabled="!name" @click="go">确定</Button>
+    <Button id="go" :disabled="!name" @click="go">确定</Button>
   </div>
 </template>
 

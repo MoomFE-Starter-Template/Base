@@ -6,15 +6,15 @@
     </button>
 
     <!-- 切换深色模式 -->
-    <button title="切换深色模式" @click="theme.toggle">
+    <button title="切换深色模式" :data-theme="theme.value" @click="theme.toggle">
       <i-mdi-theme-light-dark v-if="theme.value === 'system'" />
       <i-ph-moon v-else-if="theme.value === 'dark'" />
       <i-ic-outline-wb-sunny v-else />
     </button>
 
     <!-- 跳转到 Github -->
-    <button>
-      <a class="c-inherit!" href="https://github.com/MoomFE-Starter-Template/Base" target="_blank" rel="noopener noreferrer">
+    <button title="跳转到 Github">
+      <a href="https://github.com/MoomFE-Starter-Template/Base" target="_blank" rel="noopener noreferrer">
         <i-mdi-github />
       </a>
     </button>

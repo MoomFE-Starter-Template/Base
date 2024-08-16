@@ -28,5 +28,8 @@ jobs:
       - name: lint
         run: pnpm lint
 
-      - name: build
-        run: pnpm build
+      - name: build && test
+        run: |
+          npm install serve cypress -g
+          pnpm add cypress -D && cypress install
+          pnpm test:ci

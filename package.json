@@ -13,6 +13,8 @@
     "preview:ssr": "pnpm build:ssr && nuxt preview --host",
     "lint": "pnpm i && eslint .",
     "lint:fix": "pnpm i && eslint . --fix",
+    "test": "tsx ./cypress/scripts/run-test.ts",
+    "test:ci": "tsx ./cypress/scripts/run-test.ts --ci",
     "up": "npx taze latest -w -i",
     "postinstall": "nuxt prepare"
   },
@@ -43,11 +45,13 @@
     "pathe": "^1.1.2",
     "pnpm": "^9.7.1",
     "sass": "^1.77.8",
+    "tsx": "^4.17.0",
     "type-fest": "^4.24.0",
     "typescript": "^5.5.4",
     "unocss": "^0.62.1",
     "unocss-preset-extra": "^0.5.3",
     "unplugin-icons": "^0.19.2",
-    "unplugin-vue-components": "^0.27.4"
+    "unplugin-vue-components": "^0.27.4",
+    "wait-on": "^7.2.0"
   }
 }

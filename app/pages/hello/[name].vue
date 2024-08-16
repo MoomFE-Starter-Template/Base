@@ -12,7 +12,7 @@
   </p>
 
   <div class="mt-6">
-    <Button @click="$router.back()">返回</Button>
+    <Button id="back" @click="$router.back()">返回</Button>
   </div>
 </template>
 
