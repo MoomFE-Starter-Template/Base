@@ -29,7 +29,7 @@
     "pinia": "^2.2.1",
     "primevue": "^4.0.4",
     "theme-colors": "^0.1.0",
-    "vue": "latest"
+    "vue": "^3.4.38"
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.9",
