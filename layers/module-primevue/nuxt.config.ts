@@ -2,7 +2,7 @@ import CustomPreset from './preset/custom';
 
 export default defineNuxtConfig({
   modules: [
-    '@primevue/nuxt-module',
+    // '@primevue/nuxt-module',
   ],
   // https://primevue.org/nuxt/
   primevue: {
