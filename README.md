@@ -22,7 +22,7 @@
 ### UI 框架 & 组件库
   - [UnoCSS](https://unocss.dev) - 高性能且极具灵活性的原子化 CSS 引擎
   - [Element Plus](https://element-plus.org/zh-CN)
-  - [PrimeVue](https://primevue.org) - <small>`可选, 默认禁用, 有需要自行开启`</small>
+  - [PrimeVue](https://primevue.org) - `可选, 默认禁用, 有需要自行开启`
 
 ### Icons
   - [Iconify](https://iconify.design) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
@@ -91,23 +91,31 @@
 
 ### [登录鉴权](./layers/requires-auth/)
 
-使用说明可查看 [layers/requires-auth/README.md](./layers/requires-auth/README.md)
+使用说明可查看 [/layers/requires-auth/README.md](./layers/requires-auth/README.md)
 
 ### 配置 [颜色模式](./layers/module-color-mode/)
 
-使用说明可查看 [layers/module-color-mode/README.md](./layers/module-color-mode/README.md)
+使用说明可查看 [/layers/module-color-mode/README.md](./layers/module-color-mode/README.md)
 
 ### 配置 [UnoCSS](./layers/module-unocss/)
 
-使用说明可查看 [layers/module-unocss/README.md](./layers/module-unocss/README.md)
+使用说明可查看 [/layers/module-unocss/README.md](./layers/module-unocss/README.md)
 
 ### 配置 [Element Plus](./layers/module-element-plus/)
 
-使用说明可查看 [layers/module-element-plus/README.md](./layers/module-element-plus/README.md)
+使用说明可查看 [/layers/module-element-plus/README.md](./layers/module-element-plus/README.md)
 
-### 配置 [PrimeVue](./layers/module-primevue/) - <small>`可选, 默认禁用, 有需要自行开启`</small>
+### 配置 [PrimeVue](./layers/module-primevue/)
 
-使用说明可查看 [layers/module-primevue/README.md](./layers/module-primevue/README.md)
+`可选, 默认禁用, 有需要自行开启`, 使用说明可查看 [/layers/module-primevue/README.md](./layers/module-primevue/README.md)
+
+### e2e 测试
+
+该模板已集成 [Cypress](https://www.cypress.io) 进行 e2e 测试, 可查看 [/cypress](./cypress/) 文件夹, 但是考虑很多项目都不需要 e2e 测试, 并且由于 `cypress` 体积原因安装较慢, 所以并未安装该依赖类库, 如有需要可自行安装
+
+```bash
+  pnpm add cypress -D
+```
 
 ## 常见问题
 
