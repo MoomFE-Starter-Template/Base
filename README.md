@@ -83,6 +83,42 @@
 
 <br>
 
+## 命令
+
+### 开发 / 打包 / 预览
+
+```bash
+  pnpm dev # 启动项目
+
+  pnpm build # 打包项目 ( SSG )
+  pnpm build:ssr # 打包项目 ( SSR )
+
+  pnpm preview # 打包并预览项目 ( SSG )
+  pnpm preview:ssr # 打包并预览项目 ( SSR )
+```
+
+### 代码检查
+
+```bash
+  pnpm lint # 检查代码风格
+  pnpm lint:fix # 检查并尝试修复代码风格
+```
+
+### 代码测试
+
+```bash
+  pnpm test # 启动预览项目并进行 e2e 测试
+  pnpm test:ci # 启动预览项目并进行一次 e2e 测试
+```
+
+### 其他
+
+```bash
+  pnpm run up # 更新依赖 ( 注意, 和其他命令不同, 使用这个命令需要加 `run` )
+```
+
+<br>
+
 ## 指南
 
 ### 项目配置
@@ -114,7 +150,8 @@
 该模板已集成 [Cypress](https://www.cypress.io) 进行 e2e 测试, 可查看 [/cypress](./cypress/) 文件夹, 但是考虑很多项目都不需要 e2e 测试, 并且由于 `cypress` 体积原因安装较慢, 所以并未安装该依赖类库, 如有需要可自行安装
 
 ```bash
-  pnpm add cypress -D
+  pnpm add cypress -D # 安装 cypress
+  pnpm test # 启动预览项目并进行 e2e 测试
 ```
 
 ## 常见问题
