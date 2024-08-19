@@ -39,7 +39,7 @@
     "@pinia/nuxt": "^0.5.3",
     "@primevue/nuxt-module": "^4.0.4",
     "@unocss/nuxt": "^0.62.1",
-    "@vueuse/nuxt": "^10.11.1",
+    "@vueuse/nuxt": "^11.0.0",
     "eslint": "^9.9.0",
     "nuxt": "^3.12.4",
     "pathe": "^1.1.2",
