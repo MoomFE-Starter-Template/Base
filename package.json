@@ -23,7 +23,7 @@
     "@mixte/use": "^2.2.0",
     "@primevue/themes": "^4.0.4",
     "@unocss/reset": "^0.62.2",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.0",
     "element-plus": "^2.8.0",
     "mixte": "^2.2.0",
     "pinia": "^2.2.2",
