@@ -19,6 +19,11 @@ export const useAuthStore = defineStore('auth', () => {
   wheneverImmediate(isLogin, () => {
     info.execute();
   });
+  // 退出登录后重置用户信息
+  wheneverImmediate(logicNot(isLogin), () => {
+    loginByUsername.reset();
+    info.reset();
+  });
 
   /** 退出登录 */
   const logout = useRequestReactive((showToast?: boolean) => {
