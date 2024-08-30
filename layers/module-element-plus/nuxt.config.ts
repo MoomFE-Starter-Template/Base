@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   elementPlus: {
     importStyle: 'scss',
     themes: ['dark'],
+    defaultLocale: 'zh-cn',
   },
   vite: {
     css: {
