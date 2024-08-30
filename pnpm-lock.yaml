@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@mixte/snippets':
-        specifier: ^2.3.0
-        version: 2.3.0(vue@3.4.38(typescript@5.5.4))
+        specifier: ^2.4.0
+        version: 2.4.0(vue@3.4.38(typescript@5.5.4))
       '@mixte/use':
-        specifier: ^2.3.0
-        version: 2.3.0(vue@3.4.38(typescript@5.5.4))
+        specifier: ^2.4.0
+        version: 2.4.0(vue@3.4.38(typescript@5.5.4))
       '@primevue/themes':
         specifier: ^4.0.4
         version: 4.0.4
@@ -30,8 +30,8 @@ importers:
         specifier: ^2.8.0
         version: 2.8.0(vue@3.4.38(typescript@5.5.4))
       mixte:
-        specifier: ^2.3.0
-        version: 2.3.0
+        specifier: ^2.4.0
+        version: 2.4.0
       pinia:
         specifier: ^2.2.2
         version: 2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
@@ -955,11 +955,11 @@ packages:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
 
-  '@mixte/snippets@2.3.0':
-    resolution: {integrity: sha512-hVLbFl+CMBqF+5XhMXWnZi6Ul1TXzbshsxqXWPWkYKPEbbWSetTVA9OKTNNicpjqA/RwSd1OglWuyqYwSUa9XA==}
+  '@mixte/snippets@2.4.0':
+    resolution: {integrity: sha512-qGo0cdr8SlIS1vkpp4omXccpkrnN71FZRQW+LOwSkLaGfnXegiGclUNNlqaMQQSXP23uYR1QDeiKVJT2jGB67A==}
 
-  '@mixte/use@2.3.0':
-    resolution: {integrity: sha512-9lDyhYYJjwraOQv6qIHqNuiXua46gCUYUoPvg0YR4pM+7R6AJBFiqyVm8QkTZAgtnKMqOHJ7igk6fpvvjRc7VQ==}
+  '@mixte/use@2.4.0':
+    resolution: {integrity: sha512-qqosB/GK6AWGKnm3s8U29/g/T9Ew/44SCf4USH9oIAb1MrFMh1efDHdm6VnlRj2qqMOO1Pxs0SBoGgR8npyoKg==}
 
   '@moomfe/eslint-config@3.2.0':
     resolution: {integrity: sha512-1A/ZxE5ARXkGFkZkcnivNkGLIQllZGKexjineIjXIziFsDXAIV6h0p6xHJDLuTWnYVpmGuVM6iMNy4FElcrsnA==}
@@ -3385,8 +3385,8 @@ packages:
   mitt@3.0.1:
     resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
 
-  mixte@2.3.0:
-    resolution: {integrity: sha512-8FG8C+agjwfkrKD+2NFY2HH/E4Xp+xOdkbLiFlLERDmzHas03c0AOVk3Lu4qSUcOsMDSjRQ0vGQ3ekmsdPxTcA==}
+  mixte@2.4.0:
+    resolution: {integrity: sha512-7V45ot+ING/hNgDWi3Zrr3zEcX05jvZiagx+mD8/TR6nu5MoXhiOhwGhIzi3fk8IV2vNupFFGrbipfmD2Vw/Ag==}
 
   mkdirp@1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
@@ -5721,19 +5721,19 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mixte/snippets@2.3.0(vue@3.4.38(typescript@5.5.4))':
+  '@mixte/snippets@2.4.0(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@vueuse/core': 11.0.0(vue@3.4.38(typescript@5.5.4))
-      mixte: 2.3.0
+      mixte: 2.4.0
       vue-demi: 0.14.10(vue@3.4.38(typescript@5.5.4))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
 
-  '@mixte/use@2.3.0(vue@3.4.38(typescript@5.5.4))':
+  '@mixte/use@2.4.0(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@vueuse/core': 11.0.0(vue@3.4.38(typescript@5.5.4))
-      mixte: 2.3.0
+      mixte: 2.4.0
       vue-demi: 0.14.10(vue@3.4.38(typescript@5.5.4))
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -8742,7 +8742,7 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  mixte@2.3.0: {}
+  mixte@2.4.0: {}
 
   mkdirp@1.0.4: {}
 
