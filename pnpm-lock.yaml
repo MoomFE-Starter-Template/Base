@@ -106,8 +106,8 @@ importers:
         specifier: ^0.27.4
         version: 0.27.4(@babel/parser@7.25.3)(@nuxt/kit@3.12.4(magicast@0.3.4)(rollup@4.19.0))(rollup@4.19.0)(vue@3.4.38(typescript@5.5.4))
       wait-on:
-        specifier: ^7.2.0
-        version: 7.2.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
 packages:
 
@@ -4708,8 +4708,8 @@ packages:
       typescript:
         optional: true
 
-  wait-on@7.2.0:
-    resolution: {integrity: sha512-wCQcHkRazgjG5XoAq9jbTMLpNIjoSlZslrJ2+N9MxDsGEv1HnFoVjOCexL0ESva7Y9cu350j+DWADdk54s4AFQ==}
+  wait-on@8.0.0:
+    resolution: {integrity: sha512-fNE5SXinLr2Bt7cJvjvLg2PcXfqznlqRvtE3f8AqYdRZ9BhE+XpsCp1mwQbRoO7s1q7uhAuCw0Ro3mG/KdZjEw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -6230,7 +6230,7 @@ snapshots:
 
   '@types/eslint-scope@3.7.7':
     dependencies:
-      '@types/eslint': 9.6.0
+      '@types/eslint': 9.6.1
       '@types/estree': 1.0.5
 
   '@types/eslint@8.56.10':
@@ -10178,7 +10178,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.4
 
-  wait-on@7.2.0:
+  wait-on@8.0.0:
     dependencies:
       axios: 1.7.4
       joi: 17.13.3
