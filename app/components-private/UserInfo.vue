@@ -14,18 +14,18 @@
           </div>
         </div>
         <!-- 用户信息请求失败 -->
-        <div v-else class="op-70">用户信息获取失败</div>
+        <div v-else class="op-70">{{ t('error') }}</div>
         <!-- 退出登录按钮 -->
         <ElButton
           v-if="auth.info.isFinished"
           size="small" type="danger" text bg :loading="auth.logout.isLoading"
           @click="auth.logout.execute(true)"
         >
-          退出登录
+          {{ t('logout') }}
         </ElButton>
       </template>
       <!-- 未登录 -->
-      <div v-else flex-grow text="center neutral-5">未登录</div>
+      <div v-else flex-grow text="center neutral-5">{{ t('not-login') }}</div>
     </div>
 
     <template #template>
@@ -39,5 +39,18 @@
 </template>
 
 <script lang="ts" setup>
+  const { t } = useI18n({ useScope: 'local' });
+
   const auth = useAuthStore();
 </script>
+
+<i18n lang="yaml">
+zh-CN:
+  error: 用户信息获取失败
+  logout: 退出登录
+  not-login: 未登录
+en-US:
+  error: Failed to get user information
+  logout: Log out
+  not-login: Not logged in
+</i18n>

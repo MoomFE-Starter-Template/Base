@@ -3,6 +3,7 @@
     "vue.volar",
     "dbaeumer.vscode-eslint",
     "antfu.unocss",
-    "antfu.iconify"
+    "antfu.iconify",
+    "lokalise.i18n-ally"
   ]
 }

@@ -39,6 +39,7 @@
     "@iconify/json": "^2.2.242",
     "@moomfe/eslint-config": "^3.3.0",
     "@nuxtjs/color-mode": "^3.4.4",
+    "@nuxtjs/i18n": "^8.5.2",
     "@pinia/nuxt": "^0.5.4",
     "@primevue/nuxt-module": "^4.0.5",
     "@unocss/nuxt": "^0.62.3",

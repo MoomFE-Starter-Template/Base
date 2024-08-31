@@ -1,0 +1,14 @@
+login:
+  login: Login
+  login-success: Login success
+  get-login-status: Getting login status ...
+  user-logged-in: You are logged in
+  terms-title: Terms of Service and Privacy Policy
+  read-and-agree: Please read and agree
+  read-and-agreed: Read and agreed
+  user-agreement: 《User Agreement》
+  privacy-agreement: 《Privacy Agreement》
+  and: and
+  agree: Agree
+  disagree: Disagree
+  none: None

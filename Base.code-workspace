@@ -49,6 +49,10 @@
       "path": "app/middleware"
     },
     {
+      "name": "Locales",
+      "path": "layers/module-i18n/locales"
+    },
+    {
       "name": "Layouts",
       "path": "app/layouts"
     },
@@ -110,5 +114,12 @@
       "app/utils": true,
       "node_modules": true
     },
+
+    "i18n-ally.localesPaths": [
+      "layers/module-i18n/locales",
+      "../../layers/module-i18n/locales"
+    ],
+    "i18n-ally.enabledFrameworks": ["vue-sfc", "vue"],
+    "i18n-ally.displayLanguage": "zh-CN"
   }
 }

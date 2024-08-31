@@ -39,5 +39,9 @@
 
   "files.associations": {
     ".env": "shellscript"
-  }
+  },
+
+  "i18n-ally.localesPaths": ["layers/module-i18n/app/locales"],
+  "i18n-ally.enabledFrameworks": ["vue-sfc", "vue"],
+  "displayLanguage": "zh-CN"
 }

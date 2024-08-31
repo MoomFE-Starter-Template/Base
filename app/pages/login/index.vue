@@ -21,7 +21,7 @@
             :loading="auth.loginByUsername.isLoading"
             @click="login()"
           >
-            登录
+            {{ $t('login.login') }}
           </ElButton>
         </div>
       </div>
@@ -35,8 +35,10 @@
   import UsernameForm from './components/username-form.vue';
   import SpinnersRing from '~icons/svg-spinners/ring-resize';
 
+  const { t } = useI18n();
+
   useHead({
-    title: '登录',
+    title: () => t('login.login'),
   });
 
   const config = useAppConfig();
@@ -54,7 +56,7 @@
     await formRef.value!.login();
 
     ElMessage.success({
-      message: '登录成功',
+      message: t('login.login-success'),
       duration: 1500,
       onClose: redirect,
     });
@@ -64,10 +66,10 @@
     if (agree.value) return;
 
     await ElMessageBox({
-      title: '服务协议与隐私保护',
-      message: RenderAgree({ firstWord: '请' }),
-      confirmButtonText: '同意',
-      cancelButtonText: '不同意',
+      title: t('login.terms-title'),
+      message: RenderAgree({ start: t('login.read-and-agree') }),
+      confirmButtonText: t('login.agree'),
+      cancelButtonText: t('login.disagree'),
       showCancelButton: true,
       closeOnClickModal: false,
       closeOnPressEscape: false,
@@ -78,22 +80,21 @@
   }
 
   /** 渲染服务协议与隐私保护, 方便复用 */
-  function RenderAgree({ firstWord }: { firstWord?: string }) {
+  function RenderAgree({ start }: { start?: string }) {
     return (
       <div class="text-sm lh-[--el-checkbox-height] break-all">
         <span>
-          {firstWord ?? '已'}
-          阅读并同意
+          {start ?? t('login.read-and-agreed')}
         </span>
-        <span class="c-([--el-color-primary] hover:[--el-color-primary-light-3]) cursor-pointer" onClick={no}>《用户协议》</span>
-        <span>和</span>
-        <span class="c-([--el-color-primary] hover:[--el-color-primary-light-3]) cursor-pointer" onClick={no}>《隐私协议》</span>
+        <span class="c-([--el-color-primary] hover:[--el-color-primary-light-3]) cursor-pointer" onClick={no}>{t('login.user-agreement')}</span>
+        <span>{t('login.and')}</span>
+        <span class="c-([--el-color-primary] hover:[--el-color-primary-light-3]) cursor-pointer" onClick={no}>{t('login.privacy-agreement')}</span>
       </div>
     );
   }
 
   function no() {
-    ElMessage.error('暂无');
+    ElMessage.error(t('login.none'));
   }
 
   function redirect() {
@@ -108,13 +109,13 @@
   onMounted(async () => {
     if (!auth.isLogin) return;
 
-    const message = ElMessage.info({ message: '正在获取登录状态 ...', icon: SpinnersRing, plain: true, duration: 0 });
+    const message = ElMessage.info({ message: t('login.get-login-status'), icon: SpinnersRing, plain: true, duration: 0 });
 
     try {
       await auth.info.execute();
       message.close();
       ElMessage.success({
-        message: '您已登录',
+        message: t('login.user-logged-in'),
         duration: 1500,
         onClose: redirect,
       });

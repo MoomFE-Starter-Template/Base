@@ -4,26 +4,37 @@
   </div>
 
   <p class="mt-2">
-    你好，{{ route.params.name }}
+    {{ t('hi', { name: route.params.name }) }}
   </p>
 
   <p class="text-sm op-50">
-    <em>动态路由演示</em>
+    <em>{{ t('dynamic-route-demo') }}</em>
   </p>
 
   <div class="mt-6">
-    <Button id="back" @click="$router.back()">返回</Button>
+    <Button id="back" @click="$router.back()">{{ $t('button.back') }}</Button>
   </div>
 </template>
 
 <script lang="ts" setup>
+  const { t } = useI18n({ useScope: 'local' });
+
   const route = useRoute();
 
   useSeoMeta({
-    title: `你好，${route.params.name}`,
+    title: () => t('hi', { name: route.params.name }),
   });
 
   definePageMeta({
     layout: 'home',
   });
 </script>
+
+<i18n lang="yaml">
+zh-CN:
+  hi: 你好, {name}
+  dynamic-route-demo: 动态路由演示
+en-US:
+  hi: Hi, {name}
+  dynamic-route-demo: Demo of dynamic route
+</i18n>

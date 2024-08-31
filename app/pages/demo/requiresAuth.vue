@@ -5,8 +5,10 @@
 </template>
 
 <script lang="ts" setup>
+  const { t } = useI18n({ useScope: 'local' });
+
   useHead({
-    title: '登录鉴权示例页',
+    title: () => t('title'),
   });
 
   defineRouteRules({ ssr: false });
@@ -15,3 +17,10 @@
     requiresAuth: true,
   });
 </script>
+
+<i18n lang="yaml">
+zh-CN:
+  title: 登录鉴权示例页
+en-US:
+  title: Requires Auth Demo Page
+</i18n>
