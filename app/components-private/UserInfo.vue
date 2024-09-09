@@ -45,11 +45,11 @@
 </script>
 
 <i18n lang="yaml">
-zh-CN:
+cn:
   error: 用户信息获取失败
   logout: 退出登录
   not-login: 未登录
-en-US:
+en:
   error: Failed to get user information
   logout: Log out
   not-login: Not logged in

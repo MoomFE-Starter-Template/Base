@@ -41,14 +41,14 @@
 </script>
 
 <i18n lang="yaml">
-zh-CN:
+cn:
   example-pages: 示例页
   current-login-user-info: 当前登录用户信息展示
   is-login: 登录 ( 当前已登录 )
   is-not-login: 登录 ( 当前未登录 )
   requires-auth-tip: 未登录时无法访问, 并跳转到登录页
   requires-auth: 登录鉴权
-en-US:
+en:
   example-pages: Example Pages
   current-login-user-info: Current login user information display
   is-login: Login ( currently logged in )

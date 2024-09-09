@@ -19,8 +19,8 @@
 </script>
 
 <i18n lang="yaml">
-zh-CN:
+cn:
   title: 登录鉴权示例页
-en-US:
+en:
   title: Requires Auth Demo Page
 </i18n>

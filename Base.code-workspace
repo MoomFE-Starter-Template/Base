@@ -50,7 +50,7 @@
     },
     {
       "name": "Locales",
-      "path": "layers/module-i18n/locales"
+      "path": "app/locales"
     },
     {
       "name": "Layouts",
@@ -105,6 +105,7 @@
       "app/composables": true,
       "app/layouts": true,
       "app/lib": true,
+      "app/locales": true,
       "app/middleware": true,
       "app/modules": true,
       "app/pages": true,
@@ -116,10 +117,12 @@
     },
 
     "i18n-ally.localesPaths": [
-      "layers/module-i18n/locales",
-      "../../layers/module-i18n/locales"
+      "app/locales",
+      "../locales"
     ],
     "i18n-ally.enabledFrameworks": ["vue-sfc", "vue"],
-    "i18n-ally.displayLanguage": "zh-CN"
+    "i18n-ally.sourceLanguage": "cn",
+    "i18n-ally.displayLanguage": "cn",
+    "i18n-ally.pathMatcher": "{locale}/{namespace}.{ext}"
   }
 }

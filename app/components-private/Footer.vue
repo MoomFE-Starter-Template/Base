@@ -49,12 +49,12 @@
 </style>
 
 <i18n lang="yaml">
-zh-CN:
+cn:
   home: 首页
   toggle-dark-mode: 切换深色模式
   toggle-language: 切换语言
   github: 跳转到 Github
-en-US:
+en:
   home: Home
   toggle-dark-mode: Toggle Dark Mode
   toggle-language: Toggle Language

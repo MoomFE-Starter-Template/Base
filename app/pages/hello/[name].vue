@@ -31,10 +31,10 @@
 </script>
 
 <i18n lang="yaml">
-zh-CN:
+cn:
   hi: 你好, {name}
   dynamic-route-demo: 动态路由演示
-en-US:
+en:
   hi: Hi, {name}
   dynamic-route-demo: Demo of dynamic route
 </i18n>

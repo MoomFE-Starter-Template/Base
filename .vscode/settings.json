@@ -41,7 +41,9 @@
     ".env": "shellscript"
   },
 
-  "i18n-ally.localesPaths": ["layers/module-i18n/app/locales"],
+  "i18n-ally.localesPaths": ["app/locales"],
   "i18n-ally.enabledFrameworks": ["vue-sfc", "vue"],
-  "displayLanguage": "zh-CN"
+  "i18n-ally.sourceLanguage": "cn",
+  "i18n-ally.displayLanguage": "cn",
+  "i18n-ally.pathMatcher": "{locale}/{namespace}.{ext}"
 }
