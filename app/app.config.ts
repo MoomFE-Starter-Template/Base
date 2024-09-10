@@ -1,13 +1,16 @@
+/** 默认网站标题 */
+const defaultTitle = 'index.title';
+
 export default defineAppConfig({
   /**
    * 默认网站标题
    */
-  defaultTitle: '基础项目模板',
+  defaultTitle,
   /**
    * 网站标题模板
    *  - 用于自定义拼接网站标题生成最终的网站标题 ( 比如全局添加前缀后缀等 )
    */
-  titleTemplate: (title?: string) => `${title ?? '基础项目模板'} - MoomFE`,
+  titleTemplate: (title?: string) => `${title ?? defaultTitle} - MoomFE`,
   /**
    * 默认跳转页
    *  - 用于登录后的默认跳转
