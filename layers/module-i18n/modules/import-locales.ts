@@ -6,8 +6,15 @@ import type { LocaleObject } from '@nuxtjs/i18n';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+/** 语言文件目录 */
 const langDir = resolve(__dirname, '../../../app/locales');
 
+/**
+ * 语言列表
+ *  - code: 语言代码
+ *  - name: 语言名称
+ *  - language: 语言标识 ( 用于设置到 html 标签的 lang 属性上使用, 默认继承 code )
+ */
 const langs: LocaleObject[] = [
   { code: 'cn', name: '简体中文', language: 'zh-CN' },
   { code: 'en', name: 'English' },

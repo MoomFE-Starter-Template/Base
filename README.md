@@ -11,6 +11,7 @@
 - 😃 [各种图标集为你所用](https://github.com/iconify/icon-sets) - 150+ 图标集, 200000+ 图标为你所用, 从不妥协
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 🌍 I18n 国际化开箱即用
 - 🌙 深色模式
 - 🦾 TypeScript 支持
 - ☁️ 零配置部署 Netlify 和 Vercel
@@ -132,6 +133,10 @@
 ### 配置 [颜色模式](./layers/module-color-mode/)
 
 使用说明可查看 [/layers/module-color-mode/README.md](./layers/module-color-mode/README.md)
+
+### 配置 [i18n](./layers/module-i18n/)
+
+使用说明可查看 [/layers/module-i18n/README.md](./layers/module-i18n/README.md)
 
 ### 配置 [UnoCSS](./layers/module-unocss/)
 
