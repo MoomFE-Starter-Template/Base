@@ -1,45 +1,4 @@
-const submitBtnSelector = 'button:contains("登录")';
-const usernameInputSelector = 'input[placeholder*="请输入账号"]';
-const passwordInputSelector = 'input[placeholder*="请输入密码"]';
-const agreeCheckboxSelector = 'input[type="checkbox"]';
-
-function logout() {
-  cy.clearAllLocalStorage()
-    .clearAllSessionStorage()
-    .reload();
-}
-
-function login(loginAfterPath = '/') {
-  cy.url().then((url) => {
-    if (url === 'http://localhost:3000/') {
-      cy.get('a[href="/login"]>button')
-        .click()
-        .url()
-        .should('eq', 'http://localhost:3000/login');
-    }
-  });
-
-  cy.get(usernameInputSelector).type('admin');
-  cy.get(passwordInputSelector).type('123456');
-  cy.get(agreeCheckboxSelector).parents('.el-checkbox').click();
-
-  checkIsLoging();
-
-  cy.url()
-    .should('eq', `http://localhost:3000${loginAfterPath}`);
-}
-
-function checkIsLoging() {
-  cy.get(submitBtnSelector).click().should('be.disabled');
-  cy.get(usernameInputSelector).should('be.disabled');
-  cy.get(passwordInputSelector).should('be.disabled');
-  cy.get(agreeCheckboxSelector).should('be.disabled');
-
-  cy.get('.el-message:contains("登录成功")')
-    .should('exist');
-  cy.get('.el-message:contains("登录成功")')
-    .should('not.exist');
-}
+import { checkIsLoging, login, logout, passwordInputSelector, submitBtnSelector, usernameInputSelector } from '../utils/login';
 
 context('登录及登录鉴权流程', () => {
   beforeEach(() => {
@@ -131,26 +90,5 @@ context('登录及登录鉴权流程', () => {
 
     cy.url()
       .should('eq', 'http://localhost:3000/');
-  });
-
-  it('登录鉴权流程', () => {
-    cy.get('a[href="/demo/requiresAuth"]>button')
-      .click()
-      .url()
-      .should('eq', 'http://localhost:3000/login?redirect=/demo/requiresAuth');
-
-    login('/demo/requiresAuth');
-
-    cy.visit('/');
-
-    cy.get('a[href="/demo/requiresAuth"]>button')
-      .click()
-      .url()
-      .should('eq', 'http://localhost:3000/demo/requiresAuth');
-
-    logout();
-
-    cy.url()
-      .should('eq', 'http://localhost:3000/login?redirect=/demo/requiresAuth');
   });
 });
