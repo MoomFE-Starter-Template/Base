@@ -54,6 +54,8 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    env:
+      LANG: zh_CN.UTF-8
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
