@@ -44,7 +44,7 @@
     "@primevue/nuxt-module": "^4.0.5",
     "@unocss/nuxt": "^0.62.3",
     "@vueuse/nuxt": "^11.0.3",
-    "eslint": "^9.9.1",
+    "eslint": "^9.11.1",
     "fast-glob": "^3.3.2",
     "nuxt": "^3.13.0",
     "pathe": "^1.1.2",
