@@ -32,8 +32,8 @@
 </template>
 
 <script lang="tsx" setup>
-  import UsernameForm from './components/username-form.vue';
   import SpinnersRing from '~icons/svg-spinners/ring-resize';
+  import UsernameForm from './components/username-form.vue';
 
   const { t } = useI18n();
 

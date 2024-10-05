@@ -1,4 +1,4 @@
-import { type UsernameLoginData, getUserInfo, logout as toLogout, usernameLogin } from '@/apis/auth';
+import { getUserInfo, logout as toLogout, usernameLogin, type UsernameLoginData } from '@/apis/auth';
 import { accessToken } from '@/shared/env';
 
 export const useAuthStore = defineStore('auth', () => {

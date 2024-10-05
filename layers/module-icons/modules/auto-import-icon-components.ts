@@ -1,8 +1,8 @@
 import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'pathe';
 import { addVitePlugin, defineNuxtModule } from 'nuxt/kit';
-import Components from 'unplugin-vue-components/vite';
+import { dirname, resolve } from 'pathe';
 import IconsResolver from 'unplugin-icons/resolver';
+import Components from 'unplugin-vue-components/vite';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
