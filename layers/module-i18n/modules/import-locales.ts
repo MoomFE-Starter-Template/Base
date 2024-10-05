@@ -1,8 +1,8 @@
-import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'pathe';
-import { defineNuxtModule } from 'nuxt/kit';
-import fg from 'fast-glob';
 import type { LocaleObject } from '@nuxtjs/i18n';
+import { fileURLToPath } from 'node:url';
+import fg from 'fast-glob';
+import { defineNuxtModule } from 'nuxt/kit';
+import { dirname, resolve } from 'pathe';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 

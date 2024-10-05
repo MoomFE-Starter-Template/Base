@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts" setup>
-  import type { FormInstance, FormRules } from 'element-plus';
   import type { UsernameLoginData } from '@/apis/auth.js';
+  import type { FormInstance, FormRules } from 'element-plus';
 
   const auth = useAuthStore();
 

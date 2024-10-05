@@ -1,5 +1,5 @@
-import { isBrowser, isNumber } from 'mixte';
 import { toggleThemeViewTransition } from '@mixte/snippets/toggleThemeViewTransition';
+import { isBrowser, isNumber } from 'mixte';
 import { type ColorSchema, colorSchema } from '../../types';
 
 export const useTheme = createSharedComposable(() => {

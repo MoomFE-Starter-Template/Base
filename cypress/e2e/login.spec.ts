@@ -80,7 +80,8 @@ context('登录及登录鉴权流程', () => {
 
     cy.get('.el-message-box:contains("服务协议与隐私保护")')
       .should('exist')
-      .find('button:contains("不同意")').siblings('button:contains("同意")')
+      .find('button:contains("不同意")')
+      .siblings('button:contains("同意")')
       .click();
 
     cy.get('.el-message-box:contains("服务协议与隐私保护")')
