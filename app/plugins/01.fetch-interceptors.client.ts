@@ -14,7 +14,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     const headers = options.headers ??= {};
 
     // 请求头携带 Token
-    addFetchHeader(headers, 'Authorization', `Bearer ${accessToken.value}`);
+    if (accessToken.value)
+      addFetchHeader(headers, 'Authorization', `Bearer ${accessToken.value}`);
 
     // 设置默认响应数据类型
     options.responseType ??= 'json';
