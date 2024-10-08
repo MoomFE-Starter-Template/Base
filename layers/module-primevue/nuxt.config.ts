@@ -6,8 +6,6 @@ export default defineNuxtConfig({
   ],
   // https://primevue.org/nuxt/
   primevue: {
-    // 哪个人才写的代码, 折腾我一个钟
-    // https://github.com/primefaces/primevue/issues/6187
     autoImport: false,
     components: {
       prefix: 'prime',
