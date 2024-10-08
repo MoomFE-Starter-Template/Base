@@ -21,4 +21,8 @@ export default defineAppConfig({
    *  - 用户用户鉴权失效时的跳转
    */
   loginPath: '/login',
+  /**
+   * 路由鉴权的白名单页面列表
+   */
+  requiresAuthWhiteList: ['/login'],
 });

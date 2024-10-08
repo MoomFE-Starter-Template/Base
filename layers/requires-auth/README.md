@@ -23,4 +23,13 @@
 </script>
 ```
 
-可根据需求自行修改, 若不需要登录鉴权, 可以删除该文件夹;
+支持在 [app/app.config.ts][app.config.ts] 的 `requiresAuthWhiteList` 配置项中配置路由鉴权的白名单页面列表, 在白名单中的页面无需登录即可访问
+
+可根据需求自行修改
+
+若不需要登录鉴权, 可按以下步骤进行删除:
+
+1. 删除 [app/app.config.ts][app.config.ts] 的 `requiresAuthWhiteList` 配置项
+2. 删除当前文件夹
+
+[app.config.ts]: ../../app/app.config.ts

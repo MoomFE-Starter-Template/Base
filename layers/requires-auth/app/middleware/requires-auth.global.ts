@@ -1,12 +1,20 @@
 export default defineNuxtRouteMiddleware(async (to) => {
-  if (!to.meta.requiresAuth) return;
+  const config = useAppConfig();
+
+  // 白名单页面不需要鉴权
+  if (config.requiresAuthWhiteList?.includes(to.path)) return;
+
+  // 是否需要鉴权, 默认不需要
+  const requiresAuth = to.meta.requiresAuth ?? false;
+
+  if (!requiresAuth) return;
 
   const auth = useAuthStore();
 
   // 未登录则跳转到登录页
   if (!auth.isLogin) {
     return navigateTo({
-      path: useAppConfig().loginPath,
+      path: config.loginPath,
       query: {
         redirect: to.fullPath,
       },
