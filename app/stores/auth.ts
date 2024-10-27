@@ -32,6 +32,9 @@ export const useAuthStore = defineStore('auth', () => {
       if (showToast) {
         ElMessage.success('退出登录成功');
       }
+      delay(666).then(() => {
+        location.reload();
+      });
     });
   });
 
