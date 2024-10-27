@@ -42,18 +42,20 @@ export default defineNuxtPlugin((nuxtApp) => {
               closeOnHashChange: false,
               showCancelButton: false,
               showClose: false,
-            })
-              .then(() => {
-                navigateTo(config.loginPath);
-              });
+              beforeClose: (action, instance) => {
+                instance.confirmButtonLoading = true;
+                accessToken.value = '';
+                location.reload();
+              },
+            });
           }
 
-          return Promise.reject(data.message);
+          return Promise.reject(response);
         }
 
         ElMessage.error(data.message);
 
-        return Promise.reject(data.message);
+        return Promise.reject(response);
       }
     }
   });
