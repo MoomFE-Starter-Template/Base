@@ -25,8 +25,20 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('fetch:onResponse', ({ response }: FetchContext) => {
     let data: ResponseData;
 
+    // 接口报错
+    if (response?.ok === false) {
+      if (isPlainObject(data = response?._data)) {
+        ElMessage.error(JSON.stringify(data));
+      }
+      else {
+        ElMessage.error('接口请求失败');
+      }
+
+      return Promise.reject(response);
+    }
+
+    // 后端提示错误 ( 根据后端返回的实际情况修改 )
     if (isPlainObject(data = response?._data)) {
-      // 后端提示错误 ( 根据后端返回的实际情况修改 )
       if (data.code !== '20000') {
         // 处理用户鉴权相关问题 ( 根据后端返回的实际情况修改 )
         //  - 40001: 未登录
