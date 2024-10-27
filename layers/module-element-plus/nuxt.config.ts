@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler',
           additionalData: `@use "${resolve(__dirname, 'app/assets/css/element-plus/index.scss')}" as element;`,
         },
       },

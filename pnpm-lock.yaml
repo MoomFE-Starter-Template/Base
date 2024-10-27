@@ -30,8 +30,8 @@ importers:
         specifier: ^1.11.13
         version: 1.11.13
       element-plus:
-        specifier: ^2.8.4
-        version: 2.8.4(vue@3.5.11(typescript@5.6.2))
+        specifier: ^2.8.6
+        version: 2.8.6(vue@3.5.11(typescript@5.6.2))
       lodash-unified:
         specifier: ^1.0.3
         version: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
@@ -53,7 +53,7 @@ importers:
     devDependencies:
       '@element-plus/nuxt':
         specifier: ^1.0.10
-        version: 1.0.10(@element-plus/icons-vue@2.3.1(vue@3.5.11(typescript@5.6.2)))(element-plus@2.8.4(vue@3.5.11(typescript@5.6.2)))(magicast@0.3.5)(rollup@4.21.1)(webpack-sources@3.2.3)
+        version: 1.0.10(@element-plus/icons-vue@2.3.1(vue@3.5.11(typescript@5.6.2)))(element-plus@2.8.6(vue@3.5.11(typescript@5.6.2)))(magicast@0.3.5)(rollup@4.21.1)(webpack-sources@3.2.3)
       '@iconify/json':
         specifier: ^2.2.256
         version: 2.2.256
@@ -2492,8 +2492,8 @@ packages:
   electron-to-chromium@1.5.13:
     resolution: {integrity: sha512-lbBcvtIJ4J6sS4tb5TLp1b4LyfCdMkwStzXPyAgVgTRAsep4bvrAGaBOP7ZJtQMNJpSQ9SqG4brWOroNaQtm7Q==}
 
-  element-plus@2.8.4:
-    resolution: {integrity: sha512-ZlVAdUOoJliv4kW3ntWnnSHMT+u/Os7mXJjk2xzOlqNeHaI2/ozlF+R58ZCEak8ZnDi6+5A2viWEYRsq64IuiA==}
+  element-plus@2.8.6:
+    resolution: {integrity: sha512-fk5jB8V3efM02/4roZ5SWOLArgaYXbxEydZLlXSr+KPAwjNyHBlk2+HO5em8YKo5+RLBoHnn6BaThj6IE4nXoQ==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -4407,7 +4407,7 @@ packages:
     resolution: {integrity: sha512-LjdcbuBeLcdETCrPn9i8AYAZ1eCtu4ECAWtP7UleOiZ9LzVxRzzUZEoZ8zB24nhkQnDWyET0I+3sWokSDS3E7g==}
 
   stackback@0.0.2:
-    resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
+    resolution: {integrity: sha1-Gsig2Ug4SNFpXkGLbQMaPDzmjjs=}
 
   standard-as-callback@2.1.0:
     resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
@@ -5494,11 +5494,11 @@ snapshots:
     dependencies:
       vue: 3.5.11(typescript@5.6.2)
 
-  '@element-plus/nuxt@1.0.10(@element-plus/icons-vue@2.3.1(vue@3.5.11(typescript@5.6.2)))(element-plus@2.8.4(vue@3.5.11(typescript@5.6.2)))(magicast@0.3.5)(rollup@4.21.1)(webpack-sources@3.2.3)':
+  '@element-plus/nuxt@1.0.10(@element-plus/icons-vue@2.3.1(vue@3.5.11(typescript@5.6.2)))(element-plus@2.8.6(vue@3.5.11(typescript@5.6.2)))(magicast@0.3.5)(rollup@4.21.1)(webpack-sources@3.2.3)':
     dependencies:
       '@element-plus/icons-vue': 2.3.1(vue@3.5.11(typescript@5.6.2))
       '@nuxt/kit': 3.13.0(magicast@0.3.5)(rollup@4.21.1)(webpack-sources@3.2.3)
-      element-plus: 2.8.4(vue@3.5.11(typescript@5.6.2))
+      element-plus: 2.8.6(vue@3.5.11(typescript@5.6.2))
       magic-string: 0.27.0
       unplugin: 1.12.2
     transitivePeerDependencies:
@@ -8026,7 +8026,7 @@ snapshots:
 
   electron-to-chromium@1.5.13: {}
 
-  element-plus@2.8.4(vue@3.5.11(typescript@5.6.2)):
+  element-plus@2.8.6(vue@3.5.11(typescript@5.6.2)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.1(vue@3.5.11(typescript@5.6.2))
