@@ -1,12 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  runtimeConfig: {
-    public: {
-      /** 接口请求基础路径 */
-      API_BASE_URL: 'https://apifoxmock.com/m1/4781098-4434938-default',
-    },
-  },
-
   modules: [
     // 状态管理
     '@pinia/nuxt',

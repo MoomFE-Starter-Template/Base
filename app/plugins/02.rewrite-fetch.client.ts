@@ -6,10 +6,11 @@ import { $fetch } from 'ofetch';
  */
 export default defineNuxtPlugin((nuxtApp) => {
   const buildAssetsDir = nuxtApp.$config.app.buildAssetsDir;
-  const runtimeConfig = useRuntimeConfig();
+
+  const config = useAppConfig();
 
   globalThis.$fetch = $fetch.create({
-    baseURL: runtimeConfig.public.API_BASE_URL,
+    baseURL: config.API_BASE_URL,
 
     // 请求拦截器
     async onRequest(context) {
