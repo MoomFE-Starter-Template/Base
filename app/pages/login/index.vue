@@ -21,7 +21,7 @@
             :loading="auth.loginByUsername.isLoading"
             @click="login()"
           >
-            {{ $t('login.login') }}
+            {{ t('login.login') }}
           </ElButton>
         </div>
       </div>
@@ -37,8 +37,8 @@
 
   const { t } = useI18n();
 
-  useHead({
-    title: () => t('login.login'),
+  definePageMeta({
+    title: 'login.login',
   });
 
   const config = useAppConfig();

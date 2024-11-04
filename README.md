@@ -159,6 +159,18 @@
   pnpm test # 启动预览项目并进行 e2e 测试
 ```
 
+## 约定
+
+### 定义页面标题
+
+定义页面标题, 使用 `definePageMeta` 的 `title` 字段, 而不是 `useHead`, 方便在路由中进行读取
+
+```ts
+definePageMeta({
+  title: '页面标题', // 支持传入 i18n 的 key
+});
+```
+
 ## 常见问题
 
 待添加 ...

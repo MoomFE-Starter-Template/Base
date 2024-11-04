@@ -12,7 +12,7 @@
   </p>
 
   <div class="mt-6">
-    <Button id="back" @click="$router.back()">{{ $t('button.back') }}</Button>
+    <Button id="back" @click="$router.back()">{{ t('button.back') }}</Button>
   </div>
 </template>
 
