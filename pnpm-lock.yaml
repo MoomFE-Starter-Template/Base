@@ -72,6 +72,9 @@ importers:
       '@primevue/nuxt-module':
         specifier: ^4.1.1
         version: 4.1.1(@babel/parser@7.25.6)(magicast@0.3.5)(rollup@4.21.1)(vue@3.5.12(typescript@5.6.3))(webpack-sources@3.2.3)
+      '@types/picomatch':
+        specifier: ^3.0.1
+        version: 3.0.1
       '@unocss/nuxt':
         specifier: ^0.63.6
         version: 0.63.6(magicast@0.3.5)(postcss@8.4.47)(rollup@4.21.1)(typescript@5.6.3)(vite@5.4.8(@types/node@22.5.4)(sass@1.80.5)(terser@5.31.6))(webpack-sources@3.2.3)(webpack@5.94.0(esbuild@0.23.1))
@@ -90,6 +93,9 @@ importers:
       pathe:
         specifier: ^1.1.2
         version: 1.1.2
+      picomatch:
+        specifier: ^4.0.2
+        version: 4.0.2
       pnpm:
         specifier: ^9.12.3
         version: 9.12.3
@@ -1427,6 +1433,9 @@ packages:
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
+
+  '@types/picomatch@3.0.1':
+    resolution: {integrity: sha512-1MRgzpzY0hOp9pW/kLRxeQhUWwil6gnrUYd3oEpeYBqp/FexhaCPv3F8LsYr47gtUU45fO2cm1dbwkSrHEo8Uw==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -4421,7 +4430,7 @@ packages:
     resolution: {integrity: sha512-LjdcbuBeLcdETCrPn9i8AYAZ1eCtu4ECAWtP7UleOiZ9LzVxRzzUZEoZ8zB24nhkQnDWyET0I+3sWokSDS3E7g==}
 
   stackback@0.0.2:
-    resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
+    resolution: {integrity: sha1-Gsig2Ug4SNFpXkGLbQMaPDzmjjs=}
 
   standard-as-callback@2.1.0:
     resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
@@ -6705,6 +6714,8 @@ snapshots:
       undici-types: 6.19.8
 
   '@types/normalize-package-data@2.4.4': {}
+
+  '@types/picomatch@3.0.1': {}
 
   '@types/resolve@1.20.2': {}
 
