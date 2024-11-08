@@ -33,10 +33,10 @@ export const useAuthStore = defineStore('auth', () => {
   });
 
   // 用户信息请求失败, 并且不是用户鉴权的原因, 提示用户刷新页面
-  info.onError((error: FetchError & { ok: boolean }) => {
+  info.onError((error: FetchError & { ok?: boolean }) => {
     let data: ResponseData;
 
-    if (error.ok === false || (isPlainObject(data = error.response?._data) && !['40001', '40005'].includes(data.code))) {
+    if (error.ok === false || error.message?.includes('signal is aborted') || (isPlainObject(data = error.response?._data) && !['40001', '40005'].includes(data.code))) {
       ElMessageBox.confirm('用户信息加载失败，请刷新页面重试', {
         title: '提示',
         confirmButtonText: '刷新页面',
