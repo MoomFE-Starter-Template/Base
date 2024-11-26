@@ -1,4 +1,4 @@
-import type { FetchError } from 'ofetch';
+import type { FetchError, FetchResponse } from 'ofetch';
 import { getUserInfo, logout as toLogout, usernameLogin, type UsernameLoginData } from '@/apis/auth';
 import { accessToken } from '@/shared/env';
 import { delay, isPlainObject } from 'mixte';
@@ -33,10 +33,10 @@ export const useAuthStore = defineStore('auth', () => {
   });
 
   // 用户信息请求失败, 并且不是用户鉴权的原因, 提示用户刷新页面
-  info.onError((error: FetchError & { ok?: boolean }) => {
+  info.onError((error: FetchError | FetchResponse<any>) => {
     let data: ResponseData;
 
-    if (error.ok === false || error.message?.includes('signal is aborted') || (isPlainObject(data = error.response?._data) && !['40001', '40005'].includes(data.code))) {
+    if (error instanceof Error || !(isPlainObject(data = error?._data) && ['40001', '40005'].includes(data.code))) {
       ElMessageBox.confirm('用户信息加载失败，请刷新页面重试', {
         title: '提示',
         confirmButtonText: '刷新页面',
