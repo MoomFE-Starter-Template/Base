@@ -11,11 +11,11 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   // @ts-expect-error 请求拦截器钩子
   nuxtApp.hook('fetch:onRequest', ({ options }: FetchContext) => {
-    const headers = options.headers ??= {};
+    const headers = options.headers;
 
     // 请求头携带 Token
     if (accessToken.value)
-      addFetchHeader(headers, 'Authorization', `Bearer ${accessToken.value}`);
+      headers.set('Authorization', `Bearer ${accessToken.value}`);
 
     // 设置默认响应数据类型
     options.responseType ??= 'json';
@@ -72,25 +72,3 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
   });
 });
-
-/**
- * 为 fetch 添加请求头
- * @param headers 请求头
- * @param name 请求头名称
- * @param value 请求头值
- * @param forceOverride 是否强制覆盖 ( 默认为 false )
- */
-function addFetchHeader(headers: HeadersInit, name: string, value: string, forceOverride = false) {
-  if (Array.isArray(headers)) {
-    if (forceOverride || !headers.some(([key]) => name.toLowerCase() === key.toLowerCase()))
-      headers.push([name, value]);
-  }
-  else if (headers instanceof Headers) {
-    if (forceOverride || headers.has(name))
-      headers.set(name, value);
-  }
-  else {
-    if (forceOverride || !Object.keys(headers).some(key => name.toLowerCase() === key.toLowerCase()))
-      headers[name] = value;
-  }
-}
