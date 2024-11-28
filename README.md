@@ -130,6 +130,10 @@
 
 使用说明可查看 [/layers/requires-auth/README.md](./layers/requires-auth/README.md)
 
+### [系统更新通知](./layers/app-updata-notification/)
+
+使用说明可查看 [/layers/app-updata-notification/README.md](./layers/app-updata-notification/README.md)
+
 ### 配置 [颜色模式](./layers/module-color-mode/)
 
 使用说明可查看 [/layers/module-color-mode/README.md](./layers/module-color-mode/README.md)
