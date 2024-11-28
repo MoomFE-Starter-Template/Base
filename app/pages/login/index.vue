@@ -104,26 +104,6 @@
       replace: true,
     });
   }
-
-  // 进入登录页时, 如果已登录, 更新一下用户信息, 如果没报错说明 Token 没过期, 的确在登录状态, 则跳转到默认页
-  onMounted(async () => {
-    if (!auth.isLogin) return;
-
-    const message = ElMessage.info({ message: t('login.get-login-status'), icon: SpinnersRing, plain: true, duration: 0 });
-
-    try {
-      await auth.info.execute();
-      message.close();
-      ElMessage.success({
-        message: t('login.user-logged-in'),
-        duration: 1500,
-        onClose: redirect,
-      });
-    }
-    catch {
-      message.close();
-    }
-  });
 </script>
 
 <style lang="scss" scoped>
