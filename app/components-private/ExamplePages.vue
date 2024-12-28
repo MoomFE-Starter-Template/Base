@@ -4,11 +4,11 @@
       <i-svg-spinners-3-dots-scale-middle class="text-lg mt-12 mxa" />
     </template>
 
-    <div text-base c="green-7 dark:green-6" mt-12>
+    <div class="text-base text-green-700 dark:text-green-600 mt-12">
       ↓ ------ {{ t('example-pages') }} ------ ↓
     </div>
 
-    <div flex="~ justify-center wrap gap-2" mt-5>
+    <div class="flex justify-center flex-wrap gap-2 mt-5">
       <!-- 登录跳转和用户信息展示 -->
       <ElPopover :title="t('current-login-user-info')" :width="250" :disabled="!auth.isLogin" :hide-after="0">
         <!-- 用户信息展示 -->

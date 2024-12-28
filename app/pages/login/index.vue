@@ -86,9 +86,9 @@
         <span>
           {start ?? t('login.read-and-agreed')}
         </span>
-        <span class="c-([--el-color-primary] hover:[--el-color-primary-light-3]) cursor-pointer" onClick={no}>{t('login.user-agreement')}</span>
+        <span class="text-[--el-color-primary] hover:text-[--el-color-primary-light-3] cursor-pointer" onClick={no}>{t('login.user-agreement')}</span>
         <span>{t('login.and')}</span>
-        <span class="c-([--el-color-primary] hover:[--el-color-primary-light-3]) cursor-pointer" onClick={no}>{t('login.privacy-agreement')}</span>
+        <span class="text-[--el-color-primary] hover:text-[--el-color-primary-light-3] cursor-pointer" onClick={no}>{t('login.privacy-agreement')}</span>
       </div>
     );
   }

@@ -4,18 +4,14 @@ import { dirname, resolve } from 'pathe';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
-  modules: [
-    '@unocss/nuxt',
-  ],
-  // https://unocss.dev/integrations/nuxt
-  unocss: {
-    configFile: resolve(__dirname, 'unocss.config.ts'),
-  },
   css: [
-    '@unocss/reset/tailwind-compat.css',
+    resolve(__dirname, './app/assets/css/index.scss'),
   ],
-  features: {
-    inlineStyles: false,
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
   future: {
     compatibilityVersion: 4,

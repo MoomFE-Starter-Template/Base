@@ -13,7 +13,7 @@
     </button>
 
     <!-- 切换语言 -->
-    <el-dropdown class="c-inherit!" :title="t('toggle-language')" @command="code => setLocale(code)">
+    <el-dropdown class="!text-inherit" :title="t('toggle-language')" @command="code => setLocale(code)">
       <button>
         <i-ion-language />
       </button>
@@ -44,7 +44,9 @@
 
 <style lang="scss" scoped>
   .footer button {
-    --uno: text-(2xl center) outline-none opacity-60 hover:text-blue-5 hover:opacity-100 bg-transparent transition-(all duration-300) mx-2;
+    @apply text-2xl text-center outline-none bg-transparent mx-2;
+    @apply transition-all duration-300 opacity-60;
+    @apply hover:text-blue-500 hover:opacity-100;
   }
 </style>
 
