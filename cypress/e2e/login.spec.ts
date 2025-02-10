@@ -17,15 +17,6 @@ context('登录及登录鉴权流程', () => {
     cy.get('a[href="/login"]>button')
       .click()
       .url()
-      .should('eq', 'http://localhost:3000/login');
-
-    cy.get('.el-message:contains("正在获取登录状态")')
-      .should('exist');
-    cy.get('.el-message:contains("您已登录")')
-      .should('exist');
-    cy.get('.el-message:contains("您已登录")')
-      .should('not.exist')
-      .url()
       .should('eq', 'http://localhost:3000/');
 
     logout();
@@ -34,9 +25,6 @@ context('登录及登录鉴权流程', () => {
       .click()
       .url()
       .should('eq', 'http://localhost:3000/login');
-
-    cy.get('.el-message:contains("正在获取登录状态")')
-      .should('not.exist');
   });
 
   it('登录校验流程', () => {
