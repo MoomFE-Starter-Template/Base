@@ -1,14 +1,20 @@
 <template>
   <NuxtLoadingIndicator />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <el-config-provider :locale="locale === 'cn' ? cn : en" :message="{ showClose: true, grouping: true }">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </el-config-provider>
 </template>
 
 <script lang="ts" setup>
+  import en from 'element-plus/es/locale/lang/en';
+  import cn from 'element-plus/es/locale/lang/zh-cn';
+  import 'element-plus/theme-chalk/src/index.scss';
+
   const config = useAppConfig();
 
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
 
   const route = useRoute();
 
