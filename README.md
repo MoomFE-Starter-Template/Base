@@ -154,15 +154,6 @@
 
 `可选, 默认禁用, 有需要自行开启`, 使用说明可查看 [/layers/module-primevue/README.md](./layers/module-primevue/README.md)
 
-### e2e 测试
-
-该模板已集成 [Cypress](https://www.cypress.io) 进行 e2e 测试, 可查看 [/cypress](./cypress/) 文件夹, 但是考虑很多项目都不需要 e2e 测试, 并且由于 `cypress` 体积原因安装较慢, 所以并未安装该依赖类库, 如有需要可自行安装
-
-```bash
-  pnpm add cypress -D # 安装 cypress
-  pnpm test # 启动预览项目并进行 e2e 测试
-```
-
 ## 约定
 
 ### 定义页面标题

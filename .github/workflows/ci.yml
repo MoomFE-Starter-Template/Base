@@ -51,22 +51,3 @@ jobs:
           cache: pnpm
       - name: build ssr
         run: pnpm build:ssr
-
-  test:
-    runs-on: ubuntu-latest
-    env:
-      LANG: zh_CN.UTF-8
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-          cache: pnpm
-      - name: test
-        run: |
-          npm install serve cypress -g
-          pnpm add cypress -D && cypress install
-          pnpm test:ci

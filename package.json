@@ -13,8 +13,6 @@
     "preview:ssr": "pnpm build:ssr && nuxt preview --host",
     "lint": "pnpm i && eslint .",
     "lint:fix": "pnpm i && eslint . --fix",
-    "test": "tsx ./cypress/scripts/run-test.ts",
-    "test:ci": "tsx ./cypress/scripts/run-test.ts --ci",
     "up": "npx taze latest -w -i",
     "postinstall": "nuxt prepare"
   },
