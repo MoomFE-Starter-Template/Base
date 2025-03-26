@@ -47,7 +47,7 @@
     "eslint": "^9.23.0",
     "fast-glob": "^3.3.2",
     "html-minifier-terser": "^7.2.0",
-    "nuxt": "^3.14.1592",
+    "nuxt": "^3.16.1",
     "pathe": "^1.1.2",
     "picomatch": "^4.0.2",
     "pnpm": "^9.14.2",
