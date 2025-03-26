@@ -48,7 +48,7 @@
     "fast-glob": "^3.3.2",
     "html-minifier-terser": "^7.2.0",
     "nuxt": "^3.14.1592",
-    "pathe": "^1.1.2",
+    "pathe": "^2.0.3",
     "picomatch": "^4.0.2",
     "pnpm": "^9.14.2",
     "sass": "^1.81.0",
