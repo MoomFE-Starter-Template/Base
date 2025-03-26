@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno, transformerDirectives, transformerVariantGroup } from 'unocss';
+import { defineConfig, presetAttributify, presetIcons, presetWind3, transformerDirectives, transformerVariantGroup } from 'unocss';
 import { presetExtra } from 'unocss-preset-extra';
 
 export default defineConfig({
@@ -18,8 +18,8 @@ export default defineConfig({
     },
   },
   presets: [
-    // 默认预设, 和 Tailwind 类似
-    presetUno(),
+    // 和 Tailwind 3 类似的预设
+    presetWind3(),
     // 属性模式
     presetAttributify({
       prefix: 'un:',
