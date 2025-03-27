@@ -57,7 +57,7 @@
     "typescript": "^5.8.2",
     "unocss": "^66.0.0",
     "unocss-preset-extra": "^0.5.3",
-    "unplugin-icons": "^0.22.0",
+    "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^0.28.0"
   }
 }

@@ -124,8 +124,8 @@ importers:
         specifier: ^0.5.3
         version: 0.5.3(unocss@66.0.0(@unocss/webpack@66.0.0(webpack@5.96.1))(postcss@8.4.49)(vite@5.4.11(@types/node@22.10.0)(sass@1.86.0)(terser@5.36.0))(vue@3.5.13(typescript@5.8.2)))
       unplugin-icons:
-        specifier: ^0.22.0
-        version: 0.22.0(@vue/compiler-sfc@3.5.13)
+        specifier: ^22.1.0
+        version: 22.1.0(@vue/compiler-sfc@3.5.13)
       unplugin-vue-components:
         specifier: ^0.28.0
         version: 0.28.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.1(magicast@0.3.5))(rollup@4.27.4)(vue@3.5.13(typescript@5.8.2))
@@ -184,9 +184,6 @@ packages:
 
   '@antfu/install-pkg@0.4.1':
     resolution: {integrity: sha512-T7yB5QNG29afhWVkVq7XeIMBa5U/vs9mX69YqayXypPRmYzUmzwnYltplHmPtZ4HPCn+sQKeXW8I47wCbuBOjw==}
-
-  '@antfu/install-pkg@0.5.0':
-    resolution: {integrity: sha512-dKnk2xlAyC7rvTkpkHmu+Qy/2Zc3Vm/l8PtNyIOGDBtXPY3kThfU4ORNEp3V7SXw5XSOb+tOJaUYpfquPzL/Tg==}
 
   '@antfu/install-pkg@1.0.0':
     resolution: {integrity: sha512-xvX6P/lo1B3ej0OsaErAjqgFYzYVcJpamjLAFLYh9vRJngBrMoUG7aVnrGTeqM7yxbyTD5p3F2+0/QUEh8Vzhw==}
@@ -4838,8 +4835,8 @@ packages:
       vite:
         optional: true
 
-  unplugin-icons@0.22.0:
-    resolution: {integrity: sha512-CP+iZq5U7doOifer5bcM0jQ9t3Is7EGybIYt3myVxceI8Zuk8EZEpe1NPtJvh7iqMs1VdbK0L41t9+um9VuuLw==}
+  unplugin-icons@22.1.0:
+    resolution: {integrity: sha512-ect2ZNtk1Zgwb0NVHd0C1IDW/MV+Jk/xaq4t8o6rYdVS3+L660ZdD5kTSQZvsgdwCvquRw+/wYn75hsweRjoIA==}
     peerDependencies:
       '@svgr/core': '>=7.0.0'
       '@svgx/core': ^1.0.1
@@ -5333,11 +5330,6 @@ snapshots:
       - vitest
 
   '@antfu/install-pkg@0.4.1':
-    dependencies:
-      package-manager-detector: 0.2.11
-      tinyexec: 0.3.2
-
-  '@antfu/install-pkg@0.5.0':
     dependencies:
       package-manager-detector: 0.2.11
       tinyexec: 0.3.2
@@ -10833,14 +10825,12 @@ snapshots:
       - supports-color
       - vue
 
-  unplugin-icons@0.22.0(@vue/compiler-sfc@3.5.13):
+  unplugin-icons@22.1.0(@vue/compiler-sfc@3.5.13):
     dependencies:
-      '@antfu/install-pkg': 0.5.0
-      '@antfu/utils': 0.7.10
+      '@antfu/install-pkg': 1.0.0
       '@iconify/utils': 2.3.0
       debug: 4.4.0(supports-color@9.4.0)
-      kolorist: 1.8.0
-      local-pkg: 0.5.1
+      local-pkg: 1.1.1
       unplugin: 2.2.2
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.13
