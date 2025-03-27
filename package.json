@@ -33,7 +33,7 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.1.1",
     "@iconify/json": "^2.2.320",
-    "@moomfe/eslint-config": "^3.4.0",
+    "@moomfe/eslint-config": "^3.5.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/i18n": "^9.4.0",
     "@pinia/nuxt": "^0.7.0",
