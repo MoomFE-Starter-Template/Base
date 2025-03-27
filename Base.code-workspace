@@ -5,6 +5,10 @@
       "path": "."
     },
     {
+      "path": "layers",
+      "name": "Layers"
+    },
+    {
       "name": "Assets",
       "path": "app/assets"
     },
@@ -113,6 +117,7 @@
       "app/shared": true,
       "app/stores": true,
       "app/utils": true,
+      "layers": true,
       "node_modules": true
     },
 
