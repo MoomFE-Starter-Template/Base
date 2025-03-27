@@ -1,4 +1,5 @@
 import { defineConfig, presetAttributify, presetIcons, presetWind3, transformerDirectives, transformerVariantGroup } from 'unocss';
+import { presetAnimations } from 'unocss-preset-animations';
 import { presetExtra } from 'unocss-preset-extra';
 
 export default defineConfig({
@@ -28,6 +29,8 @@ export default defineConfig({
     presetIcons(),
     // 类名简写及额外一些样式预设
     presetExtra(),
+    // 动画预设
+    presetAnimations(),
   ],
   transformers: [
     // 在 CSS 中使用 @apply 指令

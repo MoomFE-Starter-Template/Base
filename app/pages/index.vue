@@ -1,7 +1,7 @@
 <template>
   <Logo class="mx-auto" />
 
-  <p class="mt-2">{{ t('index.title') }}</p>
+  <SparklesText :text="t('index.title')" class="text-base fw-unset mt-2" />
 
   <div class="mt-6">
     <input

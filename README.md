@@ -23,6 +23,7 @@
 ### UI 框架 & 组件库
   - [UnoCSS](https://unocss.dev) - 高性能且极具灵活性的原子化 CSS 引擎
   - [Element Plus](https://element-plus.org/zh-CN)
+  - [Inspira UI](https://inspira-ui.com) - 精美/优雅的组件集合
   - [PrimeVue](https://primevue.org) - `可选, 默认禁用, 有需要自行开启`
 
 ### Icons
@@ -149,6 +150,10 @@
 ### 配置 [Element Plus](./layers/module-element-plus/)
 
 使用说明可查看 [/layers/module-element-plus/README.md](./layers/module-element-plus/README.md)
+
+### 配置 [Inspira UI](./layers/module-inspira-ui/)
+
+使用说明可查看 [/layers/module-inspira-ui/README.md](./layers/module-inspira-ui/README.md)
 
 ### 配置 [PrimeVue](./layers/module-primevue/)
 
