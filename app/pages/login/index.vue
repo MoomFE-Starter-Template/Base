@@ -8,7 +8,7 @@
       <h1 text="4xl white">Hi</h1>
 
       <div el="6 op-48" bg="white dark:neutral-8" rounded mt-5 pt-7 pb-6 px-3>
-        <UsernameForm ref="formRef" />
+        <UsernameForm ref="formRef" @submit="login" />
 
         <div flex="~ items-start gap-2" style="--el-checkbox-height: 24px">
           <ElCheckbox v-model="agree" :disabled="auth.loginByUsername.isLoading" />

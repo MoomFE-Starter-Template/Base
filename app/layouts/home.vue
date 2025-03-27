@@ -3,10 +3,10 @@
     <slot />
     <Footer />
 
-    <ExamplePages v-if="$route.path === '/'" />
+    <ExamplePages v-if="route.path === '/'" />
   </div>
 </template>
 
 <script lang="ts" setup>
-
+  const route = useRoute();
 </script>
