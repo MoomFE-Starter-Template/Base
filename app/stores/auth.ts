@@ -1,9 +1,10 @@
+import type { UsernameLoginData } from '@/apis/auth';
 import type { FetchError, FetchResponse } from 'ofetch';
-import { getUserInfo, logout as toLogout, usernameLogin, type UsernameLoginData } from '@/apis/auth';
+import type { ResponseData } from '~/apis/types';
+import { getUserInfo, logout as toLogout, usernameLogin } from '@/apis/auth';
 import { accessToken } from '@/shared/env';
 import { delay, isPlainObject } from 'mixte';
 import LoadingIcon from '~icons/svg-spinners/ring-resize';
-import type { ResponseData } from '~/apis/types';
 
 export const useAuthStore = defineStore('auth', () => {
   /** 是否登录 */

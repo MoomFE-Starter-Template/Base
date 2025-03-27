@@ -1,6 +1,7 @@
+import type { ColorSchema } from '../../types';
 import { toggleThemeViewTransition } from '@mixte/snippets/toggleThemeViewTransition';
 import { isBrowser, isNumber } from 'mixte';
-import { type ColorSchema, colorSchema } from '../../types';
+import { colorSchema } from '../../types';
 
 export const useTheme = createSharedComposable(() => {
   const runtimeConfig = useRuntimeConfig();
