@@ -23,7 +23,6 @@
 ### UI 框架 & 组件库
   - [UnoCSS](https://unocss.dev) - 高性能且极具灵活性的原子化 CSS 引擎
   - [Element Plus](https://element-plus.org/zh-CN)
-  - [PrimeVue](https://primevue.org) - `可选, 默认禁用, 有需要自行开启`
 
 ### Icons
   - [Iconify](https://iconify.design) - 使用任意的图标集, 使用 [Icônes](https://icones.netlify.app) 或 [iconify](https://icon-sets.iconify.design) 查看或搜索图标
@@ -149,10 +148,6 @@
 ### 配置 [Element Plus](./layers/module-element-plus/)
 
 使用说明可查看 [/layers/module-element-plus/README.md](./layers/module-element-plus/README.md)
-
-### 配置 [PrimeVue](./layers/module-primevue/)
-
-`可选, 默认禁用, 有需要自行开启`, 使用说明可查看 [/layers/module-primevue/README.md](./layers/module-primevue/README.md)
 
 ## 约定
 

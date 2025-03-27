@@ -19,7 +19,6 @@
   "dependencies": {
     "@mixte/snippets": "^3.3.0",
     "@mixte/use": "^3.3.0",
-    "@primevue/themes": "^4.2.4",
     "@unocss/reset": "^66.0.0",
     "@vueuse/core": "^13.0.0",
     "@vueuse/math": "^13.0.0",
@@ -28,7 +27,6 @@
     "lodash-unified": "^1.0.3",
     "mixte": "^3.3.0",
     "pinia": "^2.2.7",
-    "primevue": "^4.3.3",
     "theme-colors": "^0.1.0",
     "vue": "^3.5.13"
   },
@@ -39,7 +37,6 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/i18n": "^9.4.0",
     "@pinia/nuxt": "^0.7.0",
-    "@primevue/nuxt-module": "^4.3.3",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/picomatch": "^3.0.2",
     "@unocss/nuxt": "^66.0.0",
