@@ -41,7 +41,7 @@
     "@moomfe/eslint-config": "^3.5.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/i18n": "^9.4.0",
-    "@pinia/nuxt": "^0.7.0",
+    "@pinia/nuxt": "^0.10.1",
     "@primevue/nuxt-module": "^4.3.3",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/picomatch": "^3.0.2",
