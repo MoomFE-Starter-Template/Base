@@ -53,7 +53,7 @@
     "fast-glob": "^3.3.3",
     "html-minifier-terser": "^7.2.0",
     "nitropack": "^2.11.8",
-    "nuxt": "^3.14.1592",
+    "nuxt": "^3.16.2",
     "pathe": "^2.0.3",
     "picomatch": "^4.0.2",
     "pnpm": "^9.15.9",

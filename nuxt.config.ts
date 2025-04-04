@@ -13,6 +13,17 @@ export default defineNuxtConfig({
     '@/assets/css/index.scss',
   ],
 
+  // https://github.com/nuxt/nuxt/issues/31352#issuecomment-2757768120
+  vite: {
+    $server: {
+      build: {
+        rollupOptions: {
+          output: { preserveModules: false },
+        },
+      },
+    },
+  },
+
   devtools: {
     enabled: true,
   },
