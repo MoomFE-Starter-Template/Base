@@ -44,7 +44,7 @@
     "@pinia/nuxt": "^0.10.1",
     "@primevue/nuxt-module": "^4.3.3",
     "@types/html-minifier-terser": "^7.0.2",
-    "@types/picomatch": "^3.0.2",
+    "@types/picomatch": "^4.0.0",
     "@unocss/nuxt": "^66.0.0",
     "@vueuse/nuxt": "^13.0.0",
     "class-variance-authority": "^0.7.1",
