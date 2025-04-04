@@ -29,7 +29,7 @@
     "lodash-unified": "^1.0.3",
     "mixte": "^3.3.0",
     "motion-v": "^0.13.1",
-    "pinia": "^2.2.7",
+    "pinia": "^3.0.1",
     "primevue": "^4.3.3",
     "theme-colors": "^0.1.0",
     "vue": "^3.5.13"
