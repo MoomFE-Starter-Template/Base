@@ -49,7 +49,7 @@
     "@vueuse/nuxt": "^13.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "eslint": "^9.23.0",
+    "eslint": "^9.25.1",
     "fast-glob": "^3.3.3",
     "html-minifier-terser": "^7.2.0",
     "nitropack": "^2.11.11",
