@@ -5,12 +5,10 @@
 </template>
 
 <script lang="ts" setup>
+  defineRouteRules({ ssr: false });
+
   definePageMeta({
     title: 'demoRequiresAuth.title',
-  });
-
-  defineRouteRules({ ssr: false });
-  definePageMeta({
     layout: 'home',
     requiresAuth: true,
   });

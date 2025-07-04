@@ -1,7 +1,7 @@
-import type { ResponseData } from '@/apis/types';
 import type { FetchContext } from 'ofetch';
-import { accessToken } from '@/shared/env';
+import type { ResponseData } from '@/apis/types';
 import { isPlainObject } from 'mixte';
+import { accessToken } from '@/shared/env';
 
 /**
  * $fetch 拦截器
