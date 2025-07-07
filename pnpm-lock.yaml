@@ -145,8 +145,8 @@ importers:
         specifier: ^1.1.1
         version: 1.2.1(@unocss/preset-wind3@66.3.2)(unocss@66.3.2(@unocss/webpack@66.3.2(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(sass@1.89.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))
       unocss-preset-extra:
-        specifier: ^0.5.3
-        version: 0.5.3(unocss@66.3.2(@unocss/webpack@66.3.2(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(sass@1.89.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))
+        specifier: ^1.0.0
+        version: 1.0.0(unocss@66.3.2(@unocss/webpack@66.3.2(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(sass@1.89.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3)))
       unplugin-icons:
         specifier: ^22.1.0
         version: 22.1.0(@vue/compiler-sfc@3.5.17)
@@ -5558,10 +5558,10 @@ packages:
       '@unocss/preset-wind3':
         optional: true
 
-  unocss-preset-extra@0.5.3:
-    resolution: {integrity: sha512-rRosBmJ3S8/97o/l4J1lc3AJnSGMSD1FgDs4bvUWmrz2OQvPheuZluL8xULEd5MGwHjw4vAwYkue114pnVelzA==}
+  unocss-preset-extra@1.0.0:
+    resolution: {integrity: sha512-TByZwhEp3ChfND2fSiMTz023m1ghUPmuKpnhFG5/Uc9mCmL7eEV7y6nw06IE48m1niG1fI9THI4hWn5CpQ4JdA==}
     peerDependencies:
-      unocss: '>= 0.31.0 < 1'
+      unocss: '>= 0.31.0'
 
   unocss@66.3.2:
     resolution: {integrity: sha512-u5FPNsjI2Ah1wGtpmteVxWe6Bja9Oggg25IeAatJCoDd1LxtLm0iHr+I0RlSq0ZwewMWzx/Qlmrw7jU0ZMO+0Q==}
@@ -12610,7 +12610,7 @@ snapshots:
     optionalDependencies:
       '@unocss/preset-wind3': 66.3.2
 
-  unocss-preset-extra@0.5.3(unocss@66.3.2(@unocss/webpack@66.3.2(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(sass@1.89.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))):
+  unocss-preset-extra@1.0.0(unocss@66.3.2(@unocss/webpack@66.3.2(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(sass@1.89.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))):
     dependencies:
       unocss: 66.3.2(@unocss/webpack@66.3.2(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.10)(jiti@2.4.2)(sass@1.89.2)(terser@5.43.1)(tsx@4.20.3)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
 
