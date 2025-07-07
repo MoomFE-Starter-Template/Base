@@ -29,7 +29,7 @@
     "lodash-unified": "^1.0.3",
     "mixte": "^3.3.0",
     "motion-v": "^1.5.0",
-    "pinia": "^3.0.1",
+    "pinia": "^3.0.3",
     "primevue": "^4.3.5",
     "theme-colors": "^0.1.0",
     "vue": "^3.5.17"
@@ -41,7 +41,7 @@
     "@moomfe/eslint-config": "^3.5.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/i18n": "^9.5.6",
-    "@pinia/nuxt": "^0.10.1",
+    "@pinia/nuxt": "^0.11.1",
     "@primevue/nuxt-module": "^4.3.5",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/picomatch": "^4.0.0",
