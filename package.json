@@ -64,7 +64,7 @@
     "typescript": "^5.8.3",
     "unocss": "^66.0.0",
     "unocss-preset-animations": "^1.1.1",
-    "unocss-preset-extra": "^0.5.3",
+    "unocss-preset-extra": "^1.0.0",
     "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^28.8.0"
   }
