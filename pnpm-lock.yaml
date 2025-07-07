@@ -15,10 +15,10 @@ importers:
         specifier: ^3.4.1
         version: 3.4.1(@vueuse/core@13.5.0(vue@3.5.17(typescript@5.8.3)))(mixte@3.4.1)(vue@3.5.17(typescript@5.8.3))
       '@primeuix/themes':
-        specifier: ^1.1.2
+        specifier: ^1.2.1
         version: 1.2.1
       '@primevue/forms':
-        specifier: ^4.3.5
+        specifier: ^4.3.6
         version: 4.3.6(vue@3.5.17(typescript@5.8.3))
       '@unocss/reset':
         specifier: ^66.3.3
@@ -33,8 +33,8 @@ importers:
         specifier: ^1.11.13
         version: 1.11.13
       element-plus:
-        specifier: ^2.10.2
-        version: 2.10.2(vue@3.5.17(typescript@5.8.3))
+        specifier: ^2.10.3
+        version: 2.10.3(vue@3.5.17(typescript@5.8.3))
       lodash-unified:
         specifier: ^1.0.3
         version: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
@@ -48,7 +48,7 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3))
       primevue:
-        specifier: ^4.3.5
+        specifier: ^4.3.6
         version: 4.3.6(vue@3.5.17(typescript@5.8.3))
       theme-colors:
         specifier: ^0.1.0
@@ -59,9 +59,9 @@ importers:
     devDependencies:
       '@element-plus/nuxt':
         specifier: ^1.1.3
-        version: 1.1.3(@element-plus/icons-vue@2.3.1(vue@3.5.17(typescript@5.8.3)))(element-plus@2.10.2(vue@3.5.17(typescript@5.8.3)))(magicast@0.3.5)
+        version: 1.1.3(@element-plus/icons-vue@2.3.1(vue@3.5.17(typescript@5.8.3)))(element-plus@2.10.3(vue@3.5.17(typescript@5.8.3)))(magicast@0.3.5)
       '@iconify/json':
-        specifier: ^2.2.354
+        specifier: ^2.2.355
         version: 2.2.355
       '@inspira-ui/plugins':
         specifier: ^0.0.1
@@ -79,7 +79,7 @@ importers:
         specifier: ^0.11.1
         version: 0.11.1(magicast@0.3.5)(pinia@3.0.3(typescript@5.8.3)(vue@3.5.17(typescript@5.8.3)))
       '@primevue/nuxt-module':
-        specifier: ^4.3.5
+        specifier: ^4.3.6
         version: 4.3.6(@babel/parser@7.28.0)(magicast@0.3.5)(vue@3.5.17(typescript@5.8.3))
       '@types/html-minifier-terser':
         specifier: ^7.0.2
@@ -2841,8 +2841,8 @@ packages:
   electron-to-chromium@1.5.179:
     resolution: {integrity: sha512-UWKi/EbBopgfFsc5k61wFpV7WrnnSlSzW/e2XcBmS6qKYTivZlLtoll5/rdqRTxGglGHkmkW0j0pFNJG10EUIQ==}
 
-  element-plus@2.10.2:
-    resolution: {integrity: sha512-p2KiAa0jEGXrzdlTAfpiS7HQFAhla4gvx6H7RuDf+OO0uC3DGpolxvdHjFR8gt7+vaWyxQNcHa1sAdBkmjqlgA==}
+  element-plus@2.10.3:
+    resolution: {integrity: sha512-OLpf0iekuvWJrz1+H9ybvem6TYTKSNk6L1QDA3tYq2YWbogKXJnWpHG1UAGKR1B7gx+vUH7M15VIH3EijE9Kgw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -6410,11 +6410,11 @@ snapshots:
     dependencies:
       vue: 3.5.17(typescript@5.8.3)
 
-  '@element-plus/nuxt@1.1.3(@element-plus/icons-vue@2.3.1(vue@3.5.17(typescript@5.8.3)))(element-plus@2.10.2(vue@3.5.17(typescript@5.8.3)))(magicast@0.3.5)':
+  '@element-plus/nuxt@1.1.3(@element-plus/icons-vue@2.3.1(vue@3.5.17(typescript@5.8.3)))(element-plus@2.10.3(vue@3.5.17(typescript@5.8.3)))(magicast@0.3.5)':
     dependencies:
       '@element-plus/icons-vue': 2.3.1(vue@3.5.17(typescript@5.8.3))
       '@nuxt/kit': 3.17.6(magicast@0.3.5)
-      element-plus: 2.10.2(vue@3.5.17(typescript@5.8.3))
+      element-plus: 2.10.3(vue@3.5.17(typescript@5.8.3))
       magic-string: 0.27.0
       unplugin: 1.16.1
     transitivePeerDependencies:
@@ -9292,7 +9292,7 @@ snapshots:
 
   electron-to-chromium@1.5.179: {}
 
-  element-plus@2.10.2(vue@3.5.17(typescript@5.8.3)):
+  element-plus@2.10.3(vue@3.5.17(typescript@5.8.3)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.1(vue@3.5.17(typescript@5.8.3))
