@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       '@mixte/snippets':
-        specifier: ^3.3.0
+        specifier: ^3.4.1
         version: 3.4.1(@mixte/use@3.4.1(@vueuse/core@13.5.0(vue@3.5.17(typescript@5.8.3)))(mixte@3.4.1)(vue@3.5.17(typescript@5.8.3)))(@tiptap/core@2.24.1(@tiptap/pm@2.24.1))(@types/sortablejs@1.15.8)(@vueuse/core@13.5.0(vue@3.5.17(typescript@5.8.3)))(antd@5.26.3(luxon@3.6.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(mixte@3.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vue@3.5.17(typescript@5.8.3))
       '@mixte/use':
-        specifier: ^3.3.0
+        specifier: ^3.4.1
         version: 3.4.1(@vueuse/core@13.5.0(vue@3.5.17(typescript@5.8.3)))(mixte@3.4.1)(vue@3.5.17(typescript@5.8.3))
       '@primeuix/themes':
         specifier: ^1.1.2
@@ -39,7 +39,7 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
       mixte:
-        specifier: ^3.3.0
+        specifier: ^3.4.1
         version: 3.4.1
       motion-v:
         specifier: ^1.5.0
