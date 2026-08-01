@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.1.5",
-    "@iconify/json": "^2.2.494",
+    "@iconify/json": "^2.2.508",
     "@inspira-ui/plugins": "^0.0.2",
     "@moomfe/eslint-config": "^3.5.0",
     "@nuxtjs/color-mode": "^3.5.2",
@@ -55,7 +55,7 @@
     "nitropack": "^2.13.4",
     "nuxt": "^3.17.6",
     "pathe": "^2.0.3",
-    "picomatch": "^4.0.4",
+    "picomatch": "^4.0.5",
     "pnpm": "^9.15.9",
     "sass": "^1.89.2",
     "tailwind-merge": "^3.6.0",
